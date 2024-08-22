@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F76XVSKN3V"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQLGB7KFQX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FQLGB7KFQX');
+      </script>
     <title>Dingqiang Ye @ SUSTech</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +17,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="static/img/SUSTech-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <meta property="og:image" content="images/luo7.jpg">
     <!-- <meta property="og:image" content="https://devinluo27.github.io/images/luo7.jpg"> -->
@@ -162,7 +169,7 @@ a:hover{color:#bc6262}
                                 <!-- Google Scholar:  -->
                                 <a href="https://scholar.google.com/citations?user=7ZlxRjgAAAAJ&hl=en">Google Scholar</a> /
                                 <a href="https://github.com/bugjudger">Github</a> /
-                                <a href="https://drive.google.com/file/d/1WoAE8babKcEig46XudlREFEadHu42W0g/view?usp=sharing">CV</a>
+                                <a href="https://drive.google.com/file/d/1XbfC6GlXE_JWMGc276gXeB7Ff1CFSJum/view?usp=share_link">CV</a>
                                 <!-- Github: <a href="https://github.com/yilundu">https://github.com/yilundu</a> </p> -->
                                 
                             </div>
@@ -189,19 +196,23 @@ a:hover{color:#bc6262}
              <!-- and was an intern at Tencent. -->
             <br>
             <br>
-            My research goal is to develop intelligent agents that can freely interact with the physical world and bring a positive impact on people's lives.
+            My research goal is to develop recognition intelligent that can accurately identify object in the physical world and bring a positive impact on people's lives.
+            To this end, my interests lie at the vision foundation model, object identification and generative AI.
+            Currently, I am working on leveraging large vision model to identify human subject.
+
+
+            <!-- My research goal is to develop intelligent agents that can freely interact with the physical world and bring a positive impact on people's lives. -->
             <!-- His work builds machine learning and perception algorithms for general-purpose robots. -->
-            To this end, my interests lie at the intersection of computer vision, decision-making, and robotics. 
+            <!-- To this end, my interests lie at the intersection of computer vision, decision-making, and robotics.  -->
             <!-- Existing large-scale data-driven models have gained some success, but these models are cumbersome, costly, and remain a black box. -->
-            I seek to build intelligence agents in a more efficient and scientific way by drawing inspiration from human cognitive biases
+            <!-- I seek to build intelligence agents in a more efficient and scientific way by drawing inspiration from human cognitive biases -->
             <!-- , such as compositionality, -->
-            and make them more reliable, lightweight, cost-effective, and accessible to users.
+            <!-- and make them more reliable, lightweight, cost-effective, and accessible to users. -->
             <!-- broadly interested in the interplay between computer vision, decision making, and robotics.   -->
-            Currently, I am working on leveraging generative AI to enable robust and generalizable decision-making. 
+            <!-- Currently, I am working on leveraging generative AI to enable robust and generalizable decision-making.  -->
             <!-- perception and planning -->
             <br>
             <br>
-            Outside academia, I spend my time playing sports and music, and hanging out with friends. 
             <!-- Check them out <a href="#title-misc">here</a>. -->
             <!-- <br> -->
             <!-- <br> -->
@@ -249,35 +260,61 @@ a:hover{color:#bc6262}
                 <!-- <a href="#topic-generative-model" onClick="return publicationByTopicSpecific(this)" data-topic="generative-model">Generative Modeling</a> / -->
                 <!-- <a href="#topic-perception" onClick="return publicationByTopicSpecific(this)" data-topic="perception">Perception and Scene Understanding</a> -->
                 <a href="#topic-computer-vision" onClick="return publicationByTopicSpecific(this)" data-topic="computer-vision">Computer Vision</a> /
-                <a href="#topic-decision-making" onClick="return publicationByTopicSpecific(this)" data-topic="decision-making">Decision Making</a>
+                <!-- <a href="#topic-lvm" onClick="return publicationByTopicSpecific(this)" data-topic="lvm">Large Vision Model</a> -->
                 <!-- <a href="#topic-rl" onClick="return publicationByTopicSpecific(this)" data-topic="rl">Interactive Learning</a> -->
                 <span class="note">(* indicates equal contribution and <sup>†</sup> indicates equal advising)</span>
             </p>
 
             <div id="main-pub-card-container" class="hide">
-                <div class="pub-card" data-topic="decision-making" data-year="2023" data-selected="true">
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2024" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2023-potential-motion-plan.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/projects/2024-BigGait.gif" width="100%" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Potential Based Diffusion Motion Planning </h5>
+                                <h5 class="title">BigGait: Learning Gait Representation You Want by Large Vision Models</h5>
                                 <h6 class="authors">
-                                    <u>Yunhao Luo</u>,
-                                    <a href="http://chensun.me/">Chen Sun</a>,
-                                    <a href="http://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
-                                    <a href="https://yilundu.github.io/">Yilun Du</a>
+                                    <u>Dingqiang Ye*</u>,
+                                    <a href="https://chaofan996.github.io">Chao Fan*</a>,
+                                    <a>Jingzhe Ma</a>,
+                                    <a href="https://www.cse.msu.edu/~liuxm/index2.html">Xiaoming Liu</a>,
+                                    <a href="https://faculty.sustech.edu.cn/yusq/en/">Shiqi Yu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">ICML 2024</span> 
+                                    <span class="conference">CVPR 2024</span> 
                                     /
-                                    <!-- <a href="https://openreview.net/forum?id=1uHTIjXjkk">Paper</a> -->
-                                    <a href="https://energy-based-model.github.io/potential-motion-plan/">Website</a> /
-                                    <a href="https://energy-based-model.github.io/potential-motion-plan/potential_motion_plan.pdf">Paper</a>
-                                    / <a href="https://github.com/devinluo27/potential-motion-plan-release">Code</a> 
-                                    / <a href="https://colab.research.google.com/drive/1pARD89PfSzF3Ml6virZjztEJKWhXVkBY?usp=sharing">Colab</a> 
-                                    <!-- <br> -->
+                                    <!-- <a href="https://energy-based-model.github.io/potential-motion-plan/">Website</a> / -->
+                                    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf">Paper</a>
+                                    / <a href="https://github.com/ShiqiYu/OpenGait">Code</a> 
+                                    <!-- / <a href="https://colab.research.google.com/drive/1pARD89PfSzF3Ml6virZjztEJKWhXVkBY?usp=sharing">Colab</a>  -->
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2023-GaitEditer.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">GaitEditer: Attribute Editing for Gait Representation Learning</h5>
+                                <h6 class="authors">
+                                    <a>Jingzhe Ma*</a>,
+                                    <u>Dingqiang Ye*</u>,
+                                    <a href="https://chaofan996.github.io">Chao Fan*</a>,
+                                    <a href="https://faculty.sustech.edu.cn/yusq/en/">Shiqi Yu</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Arxiv 2023 (Under Review at T-PAMI)</span> 
+                                    /
+                                    <!-- <a href="https://energy-based-model.github.io/potential-motion-plan/">Website</a> / -->
+                                    <a href="https://arxiv.org/pdf/2303.05076">Paper</a>
                                     <br>
                                 </p>
                             </div>
@@ -286,7 +323,8 @@ a:hover{color:#bc6262}
                 </div>
 
 
-                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+
+                <!-- <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2022-colearn.png" width="100%" playsinline autoplay muted loop preload/>
@@ -303,15 +341,14 @@ a:hover{color:#bc6262}
                                 </h6>
                                 <p class="info">
                                     <span class="conference">ICCV 2023</span> /
-                                    <!-- <a href="https://video-adapter.github.io/video-adapter/">Website</a> / -->
                                     <a href="https://arxiv.org/abs/2307.12574">Paper</a> 
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                <!-- <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2022-DATR.png" width="100%" playsinline autoplay muted loop preload/>
@@ -327,18 +364,15 @@ a:hover{color:#bc6262}
                                 </h6>
                                 <p class="info">
                                     <span class="conference">ICCV 2023</span> /
-                                    <!-- <a href="https://vlislab22.github.io/DATR/">Website</a> / -->
                                     <a href="https://arxiv.org/abs/2308.05493">Paper</a> /
                                     <a href="https://github.com/zhengxuJosh/DATR">Code</a> 
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div> -->
 
-
-                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                <!-- <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2022-tcc.png" width="100%" playsinline autoplay muted loop preload/>
@@ -355,18 +389,14 @@ a:hover{color:#bc6262}
                                 </h6>
                                 <p class="info">
                                     <span class="conference">ICRA 2024</span> /
-                                    <!-- <a href="https://flow-diffusion.github.io/">Website</a> / -->
                                     <a href="https://arxiv.org/abs/2209.02178">Paper</a>
-                                    <!-- / <a href="https://github.com/flow-diffusion/AVDC">Code</a>  -->
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-               
-
-                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                <!-- <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2022-c2vkd.png" width="100%"/>
@@ -383,14 +413,12 @@ a:hover{color:#bc6262}
                                 </h6>
                                 <p class="info">
                                     <span class="conference">Under Review at TIP</span> /
-                                    <!-- <a href="https://rl-diffusion.github.io/">Website</a> / -->
                                     <a href="https://arxiv.org/abs/2310.07265">Paper</a>
-                                    <!-- <a href="https://github.com/jannerm/ddpo">Code</a>  -->
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <!-- <div class="pub-card" data-topic="computer-vision" data-year="2022" data-selected="true">
@@ -471,29 +499,44 @@ a:hover{color:#bc6262}
 
         <div id="main-pub-container">
             <h5 class="subtitle">Experience</h5>
+            
+            <div class="pub-card" data-topic="experience" data-selected="False">
+                <div class="row">
+                    <div class="col-l col-xs-12 col-lg-3">
+                        <img src="data/2024-MSU-logo.png" width="100%" playsinline autoplay muted loop preload/>
+                    </div>
+                    <div class="col-r col-xs-12 col-lg-9">
+                        <div class="pub-card-body">
+                            <h5 class="title">Visiting Scholar, Michigan State University</h5>
+                            Apr. 2024 -- Dec. 2024
+                            <p class="info">
+                                Working on an IARPA-funded program, <a href="https://www.iarpa.gov/research-programs/briar">BRIAR</a>. <br>
+                                Human Recognition at Long Range and from High Altitude
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div id="main-pub-card-container">
                 <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/2021-tencent-logo.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/2021-tencent-logo-WeTV.png" width="100%" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
                                 <h5 class="title">Software Engineer Intern, Tencent</h5>
-                                Jul 2021 -- Sep 2021
-                                <!-- <h6 class="authors">
-                                </h6> -->
+                                Jul. 2021 -- Sep. 2021
                                 <p class="info">
-                                    <!-- communication platform for enterprises -->
-                                    Worked for <a href="https://apps.apple.com/us/app/wecom-work-communication-tools/id1087897068">WeCom</a>, a work chat and office tool with 180M+ active users, mobile app development team. Implemented 10+ features for user access control logics. User interface design, code refactoring. 
+                                    Worked for <a href="https://wetv.vip/en">WeTV</a>, one of China's largest online video platforms, backend development team.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="pub-card" data-topic="experience" data-selected="False">
+                <!-- <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/2020-UCB-logo-s.png" width="100%" playsinline autoplay muted loop preload/>
@@ -501,7 +544,7 @@ a:hover{color:#bc6262}
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
                                 <h5 class="title">Exchange Student, UC Berkeley</h5>
-                                Jan 2020 -- May 2020 <!-- , Spring Semester -->
+                                Jan 2020 -- May 2020
                                 <p class="info">
                                     CS 170: Efficient Algorithms and Intractable Problems <br>
                                     CS 61C: Great Ideas in Computer Architecture (Machine Structures) <br>
@@ -510,8 +553,8 @@ a:hover{color:#bc6262}
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> -->
+<!-- 
                 <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
@@ -519,7 +562,6 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <!-- <br> -->
                                 <h5 class="title">Summer Workshop, National University of Singapore</h5>
                                 Jul 2019 -- Aug 2019
                                 <p class="info">
@@ -527,7 +569,7 @@ a:hover{color:#bc6262}
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -543,14 +585,11 @@ a:hover{color:#bc6262}
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
                                 <h5 class="title">Teaching Assistant, SUSTech</h5>
-                                Sep 2020 -- Jul 2022
-                                <!-- <h6 class="authors">
-                                </h6> -->
+                                Sep. 2019 -- Jul. 2023
                                 <p class="info">
-                                    <li>CS203B: <em>Data Structures and Algorithm Analysis B</em>, &nbsp; Spring 2022</li>
-                                    <li>CS102A: <em>Introduction to Computer Programming</em>, &nbsp; Fall 2021</li>
-                                    <li>CS307: <em>Principles of Database Systems</em>, &nbsp; Spring 2021</li>
-                                    <li>CS205: <em>C/C++ Programming</em>, &nbsp; Fall 2020</li>
+                                    <li>CS112: <em>Introduction to Python Programming</em>, &nbsp; Spring 2023</li>
+                                    <li>CS203: <em>Data Structures and Algorithm Analysis</em>, &nbsp; Fall 2020</li>
+                                    <li>CS110: <em>Introduction to Java Programming</em>, &nbsp; Fall 2019</li>
                                 </p>
                             </div>
                         </div>
@@ -568,23 +607,46 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-topic="Projects" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2021-med-skin-proj.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/projects/2022-OpenGait.gif" width="100%" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Benchmarking the Vulnerability of Skin Cancer Classification </h5>
-                                Jul 2020 -- Apr 2021
-                                <!-- <h6 class="authors">
-                                </h6> -->
+                                <h5 class="title">Contributor, OpenGait</h5>
+                                Jul 2022 -- Apr 2024
+                                <iframe src="https://ghbtns.com/github-btn.html?user=ShiqiYu&repo=OpenGait&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+
                                 <p class="info">
-                                    Co-developed a codebase to benchmark the adversarial vulnerability of deep learning based skin cancer classifiers. Evaluated on dermoscopic lesion images with attack methods including FGSM, PGD, and DeepFool.
+                                    A flexible and extensible gait analysis project. The corresponding paper has been accepted by CVPR2023 as a highlight paper.
+                                    <!-- OpenGait project contributor a codebase to benchmark the adversarial vulnerability of deep learning based skin cancer classifiers. Evaluated on dermoscopic lesion images with attack methods including FGSM, PGD, and DeepFool. -->
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+            <div id="main-pub-card-container">
                 <div class="pub-card" data-topic="Projects" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2020-SUSTech-Defense.gif" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Leader, SUSTech Tower Defense Game</h5>
+                                Sep 2020 -- Jan 2021
+                                <iframe src="https://ghbtns.com/github-btn.html?user=Bugjudger&repo=SUSTECH-DEFENCE&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+
+                                <p class="info">
+                                    A flexible and extensible gait analysis project.
+                                    <!-- OpenGait project contributor a codebase to benchmark the adversarial vulnerability of deep learning based skin cancer classifiers. Evaluated on dermoscopic lesion images with attack methods including FGSM, PGD, and DeepFool. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="pub-card" data-topic="Projects" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="pics/proj/re2-f.gif" width="100%" playsinline autoplay muted loop preload/>
@@ -593,15 +655,13 @@ a:hover{color:#bc6262}
                             <div class="pub-card-body">
                                 <h5 class="title">SQL Code Evaluation Web Platform </h5>
                                 Sep 2020 -- Jan 2021
-                                <!-- <h6 class="authors">
-                                </h6> -->
                                 <p class="info">
                                     Led the development of a web platform for evaluating SQL code. Based on Java, Spring Boot, Spring Security, PostgreSQL, Redis, etc. Project successfully deployed online for grading student assignments for SUSTech CS307 Principles of Database Systems (∼200 students enrollment).
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 
@@ -665,7 +725,7 @@ a:hover{color:#bc6262}
         <div class="container">
             <div class="row">
                 <div class="copyright">
-                    Background photo: Blue Spaces. Website template from <a href="https://jiayuanm.com/">Jiayuan Mao</a>
+                    Background photo: Blue Spaces. Website template from <a href="https://devinluo27.github.io">Yunhao Luo</a>
                 </div>
             </div>
         </div>
