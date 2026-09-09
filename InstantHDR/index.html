@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>InstantHDR | ECCV 2026</title><link rel="stylesheet" href="style.css"></head><body>    <main>
+      <header class="project-hero page-width" id="top">
+        <h1>InstantHDR: Single-Forward Gaussian Splatting Initialization for HDR 3D Reconstruction</h1>
+        <p class="venue">ECCV 2026</p>
+        <div class="authors" aria-label="Authors">
+          <a href="https://bugjudger.github.io/" target="_blank" rel="noreferrer">Dingqiang Ye<sup>1,*</sup></a>
+          <a href="https://www.jiacongxu.net/" target="_blank" rel="noreferrer">Jiacong Xu<sup>1,*</sup></a>
+          <a href="https://www.linkedin.com/in/jianglu-lea-ping-32851b177/" target="_blank" rel="noreferrer">Jianglu Ping<sup>1</sup></a>
+          <a href="https://www.linkedin.com/in/yuxiang-guo-a7b105163/" target="_blank" rel="noreferrer">Yuxiang Guo<sup>1</sup></a>
+          <a href="https://chaofan996.github.io/" target="_blank" rel="noreferrer">Chao Fan<sup>2</sup></a>
+          <a href="https://engineering.jhu.edu/faculty/vishal-patel/" target="_blank" rel="noreferrer">Vishal M. Patel<sup>1</sup></a>
+        </div>
+        <p class="affiliations"><span><sup>1</sup> Johns Hopkins University</span><span><sup>2</sup> Shenzhen University</span><span><sup>*</sup> Equal contribution</span></p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2603.11298" target="_blank" rel="noreferrer">Paper</a>
+          <a href="https://github.com/Bugjudger/InstantHDR" target="_blank" rel="noreferrer">Code</a>
+          <a href="https://huggingface.co/datasets/Bugjudger/HDR_Pretrain" target="_blank" rel="noreferrer">Dataset</a>
+          <a href="https://eccv.ecva.net/virtual/2026/poster/3662" target="_blank" rel="noreferrer">Poster</a>
+        </div>
+      </header>
+      <figure class="teaser-figure page-width">
+        <a href="assets/figure1-paper.png" target="_blank" rel="noreferrer"><img src="assets/figure1-paper.png" width="2400" height="1313" alt="Paper Figure 1: four-view HDR reconstruction and rendering comparison between GaussHDR, AnySplat, and InstantHDR." /></a>
+        <figcaption>InstantHDR reconstructs HDR scenes from four multi-exposure views in a single forward pass.</figcaption>
+      </figure>
+      <section class="paper-section page-width abstract-section" id="abstract">
+        <h2>Abstract</h2>
+        <p>High dynamic range (HDR) novel view synthesis (NVS) aims to reconstruct HDR scenes from multi-exposure low dynamic range (LDR) images. Existing HDR pipelines heavily rely on known camera poses, well-initialized dense point clouds, and time-consuming per-scene optimization. Current feed-forward alternatives overlook the HDR problem by assuming exposure-invariant appearance. To bridge this gap, we propose InstantHDR, a feed-forward network that initializes 3D HDR scenes from uncalibrated multi-exposure LDR collections in a fast single forward pass. Specifically, we design a geometry-guided appearance modeling for multi-exposure fusion, and a meta-network for generalizable scene-specific tone mapping. Due to the lack of HDR scene data, we build a pre-training dataset, called HDR-Pretrain, for generalizable feed-forward HDR models, featuring 168 Blender-rendered scenes, diverse lighting types, and multiple camera response functions. Comprehensive experiments show that our InstantHDR delivers a single-forward HDR initialization at ∼700× the speed of SoTA optimization-based methods, and reaches comparable quality in real settings after lightweight post-optimization while remaining ∼20× faster. All code, models, and datasets: <a href="https://github.com/Bugjudger/InstantHDR" target="_blank" rel="noreferrer">https://github.com/Bugjudger/InstantHDR</a>.</p>
+      </section>
+      <section class="paper-section page-width" id="method">
+        <div class="section-title centered"><h2>Method Overview</h2></div>
+        <figure class="method-figure">
+          <a href="assets/method-paper.png" target="_blank" rel="noreferrer"><img src="assets/method-paper.png" width="3200" height="1123" alt="Original InstantHDR method diagram: geometry-guided appearance modeling and scene-specific tone mapping." /></a>
+        </figure>
+        <div class="innovation-copy">
+          <p><strong>Geometry-guided appearance fusion.</strong> We reuse attention from the frozen geometry branch to find cross-view correspondences and fuse complementary exposure information. Difference of Gaussians restores fine pixel-level details lost during patch-level fusion.</p>
+          <p><strong>Scene-specific tone mapping.</strong> A meta-network predicts a lightweight tone mapper for each scene, adapting to camera response differences and enabling exposure-controlled rendering.</p>
+          <p><strong>HDR pretraining.</strong> HDR-Pretrain provides 168 synthetic scenes with varied lighting and camera responses, supporting generalizable feed-forward HDR reconstruction.</p>
+        </div>
+      </section>
+      <section class="paper-section page-width" id="demo">
+        <div class="section-title centered"><h2>Demo Videos</h2><p>Novel-view rendering on Bear, Box, and Chair, comparing GaussHDR, AnySplat, and InstantHDR.</p></div>
+        <article class="scene-row">
+          <h3>Bear</h3>
+          <p class="input-description"><strong>Input:</strong> Four multi-view LDR images captured at different exposures, without camera poses or an initial point cloud.</p>
+          <div class="demo-inputs" aria-label="Bear supplied input images"><img src="videos/bear/input-1.jpg" alt="Bear multi-exposure input 1" loading="lazy" /><img src="videos/bear/input-2.jpg" alt="Bear multi-exposure input 2" loading="lazy" /><img src="videos/bear/input-3.jpg" alt="Bear multi-exposure input 3" loading="lazy" /><img src="videos/bear/input-4.jpg" alt="Bear multi-exposure input 4" loading="lazy" /></div>
+          <div class="video-grid">
+            <figure><video src="videos/bear/gausshdr.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="GaussHDR, bear scene" ></video><figcaption><strong>GaussHDR</strong></figcaption></figure>
+            <figure><video src="videos/bear/anysplat.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="AnySplat, bear scene" ></video><figcaption><strong>AnySplat</strong></figcaption></figure>
+            <figure><video src="videos/bear/instanthdr.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="InstantHDR (Ours), bear scene" ></video><figcaption><strong>InstantHDR (Ours)</strong></figcaption></figure>
+          </div>
+        </article>
+        <article class="scene-row">
+          <h3>Box</h3>
+          <p class="input-description"><strong>Input:</strong> Four multi-view LDR images captured at different exposures, without camera poses or an initial point cloud.</p>
+          <div class="demo-inputs" aria-label="Box supplied input images"><img src="videos/box/input-1.jpg" alt="Box multi-exposure input 1" loading="lazy" /><img src="videos/box/input-2.jpg" alt="Box multi-exposure input 2" loading="lazy" /><img src="videos/box/input-3.jpg" alt="Box multi-exposure input 3" loading="lazy" /><img src="videos/box/input-4.jpg" alt="Box multi-exposure input 4" loading="lazy" /></div>
+          <div class="video-grid">
+            <figure><video src="videos/box/gausshdr.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="GaussHDR, box scene" ></video><figcaption><strong>GaussHDR</strong></figcaption></figure>
+            <figure><video src="videos/box/anysplat.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="AnySplat, box scene" ></video><figcaption><strong>AnySplat</strong></figcaption></figure>
+            <figure><video src="videos/box/instanthdr.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="InstantHDR (Ours), box scene" ></video><figcaption><strong>InstantHDR (Ours)</strong></figcaption></figure>
+          </div>
+        </article>
+        <article class="scene-row">
+          <h3>Chair</h3>
+          <p class="input-description"><strong>Input:</strong> Multi-view LDR images captured at different exposures, without camera poses or an initial point cloud.</p>
+          <div class="demo-inputs" aria-label="Chair supplied input images"><img src="videos/chair/inputs/train_r_0_2.jpg" alt="Chair multi-exposure input 1" loading="lazy" /><img src="videos/chair/inputs/train_r_3_0.jpg" alt="Chair multi-exposure input 2" loading="lazy" /><img src="videos/chair/inputs/train_r_5_4.jpg" alt="Chair multi-exposure input 3" loading="lazy" /><img src="videos/chair/inputs/train_r_12_0.jpg" alt="Chair multi-exposure input 4" loading="lazy" /><img src="videos/chair/inputs/train_r_13_0.jpg" alt="Chair multi-exposure input 5" loading="lazy" /><img src="videos/chair/inputs/train_r_15_2.jpg" alt="Chair multi-exposure input 6" loading="lazy" /><img src="videos/chair/inputs/train_r_16_4.jpg" alt="Chair multi-exposure input 7" loading="lazy" /><img src="videos/chair/inputs/train_r_17_2.jpg" alt="Chair multi-exposure input 8" loading="lazy" /></div>
+          <div class="video-grid">
+            <figure><video src="videos/chair/gausshdr.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="GaussHDR, chair scene" ></video><figcaption><strong>GaussHDR</strong></figcaption></figure>
+            <figure><video src="videos/chair/anysplat.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="AnySplat, chair scene" ></video><figcaption><strong>AnySplat</strong></figcaption></figure>
+            <figure><video src="videos/chair/instanthdr.mp4" autoPlay loop muted playsInline controls preload="auto" aria-label="InstantHDR (Ours), chair scene" ></video><figcaption><strong>InstantHDR (Ours)</strong></figcaption></figure>
+          </div>
+        </article>
+      </section>
+      <section class="paper-section page-width ablation-section" id="ablations">
+        <div class="section-title centered"><h2>Ablations &amp; Analysis</h2></div>
+        <figure>
+          <h3>Why each component matters</h3>
+          <a href="assets/ablation-components.png" target="_blank" rel="noreferrer"><img src="assets/ablation-components.png" width="2400" height="553" loading="lazy" alt="Ground truth, full InstantHDR, and variants without cross-view attention, exposure normalization, or upsampling." /></a>
+          <figcaption>Removing cross-view attention introduces ghosting; removing exposure normalization shifts brightness; removing upsampling blurs fine details.</figcaption>
+        </figure>
+        <figure>
+          <h3>Correspondence across views and exposures</h3>
+          <a href="assets/ablation-attention.png" target="_blank" rel="noreferrer"><img src="assets/ablation-attention.png" width="2400" height="746" loading="lazy" alt="Geometry attention maps matching leaf, doorframe, cup, and mirror patches across viewpoints and exposures." /></a>
+          <figcaption>The frozen geometry encoder matches corresponding patches across large viewpoint and exposure changes, guiding appearance fusion.</figcaption>
+        </figure>
+        <figure>
+          <h3>Adapting tone mapping to each scene</h3>
+          <a href="assets/ablation-tonemapping.png" target="_blank" rel="noreferrer"><img src="assets/ablation-tonemapping.png" width="2400" height="307" loading="lazy" alt="Learned monotonic camera-response curves for the Box, Bear, and Dog scenes." /></a>
+          <figcaption>MetaNet learns distinct, monotonic response curves for different scenes; Box saturates earlier than the other examples.</figcaption>
+        </figure>
+      </section>
+      <section class="paper-section page-width ablation-section" id="dataset">
+        <div class="section-title centered">
+          <h2>HDR-Pretrain Dataset</h2>
+          <p>168 photorealistic indoor scenes rendered in Blender for generalizable HDR reconstruction.</p>
+        </div>
+        <figure>
+          <a href="assets/dataset-paper.png" target="_blank" rel="noreferrer"><img src="assets/dataset-paper.png" width="2400" height="1011" loading="lazy" alt="HDR-Pretrain examples: multi-exposure LDR images, HDR ground truth, normal and depth maps, with Standard, AgX, and Filmic tone mapping." /></a>
+          <figcaption>Each viewpoint includes five exposure-bracketed LDR images, 32-bit HDR ground truth, and depth and normal maps; Standard, AgX, and Filmic tone mapping provide diverse camera responses.</figcaption>
+        </figure>
+        <div class="project-links"><a href="https://huggingface.co/datasets/Bugjudger/HDR_Pretrain" target="_blank" rel="noreferrer">Download on Hugging Face</a></div>
+      </section>
+      <section class="paper-section page-width citation-section" id="citation">
+        <h2>BibTeX</h2>
+        <div class="citation-box"><button type="button" id="copy-citation">Copy</button><pre><code>@inproceedings{ye2026instanthdr,
+  title     = {InstantHDR: Single-Forward Gaussian Splatting
+               Initialization for HDR 3D Reconstruction},
+  author    = {Ye, Dingqiang and Xu, Jiacong and Ping, Jianglu and
+               Guo, Yuxiang and Fan, Chao and Patel, Vishal M.},
+  booktitle = {Computer Vision -- ECCV 2026},
+  year      = {2026},
+  publisher = {Springer}
+}</code></pre></div>
+      </section>
+      <footer class="page-width"><span>InstantHDR · ECCV 2026</span><span>Layout inspired by <a href="https://liujf1226.github.io/GaussHDR/" target="_blank" rel="noreferrer">GaussHDR</a>.</span></footer>
+    </main><script src="script.js" defer></script></body></html>
