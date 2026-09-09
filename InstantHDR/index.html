@@ -19,7 +19,7 @@
         </div>
       </header>
       <figure class="teaser-figure page-width">
-        <a href="assets/figure1-paper.png" target="_blank" rel="noreferrer"><img src="assets/figure1-paper.png" width="2400" height="1313" alt="Paper Figure 1: four-view HDR reconstruction and rendering comparison between GaussHDR, AnySplat, and InstantHDR." /></a>
+        <a href="assets/figure1-paper.png" target="_blank" rel="noreferrer"><img src="assets/figure1-paper.webp" decoding="async" width="2400" height="1313" alt="Paper Figure 1: four-view HDR reconstruction and rendering comparison between GaussHDR, AnySplat, and InstantHDR." /></a>
         <figcaption>InstantHDR reconstructs HDR scenes from four multi-exposure views in a single forward pass.</figcaption>
       </figure>
       <section class="paper-section page-width abstract-section" id="abstract">
@@ -29,7 +29,7 @@
       <section class="paper-section page-width" id="method">
         <div class="section-title centered"><h2>Method Overview</h2></div>
         <figure class="method-figure">
-          <a href="assets/method-paper.png" target="_blank" rel="noreferrer"><img src="assets/method-paper.png" width="3200" height="1123" alt="Original InstantHDR method diagram: geometry-guided appearance modeling and scene-specific tone mapping." /></a>
+          <a href="assets/method-paper.png" target="_blank" rel="noreferrer"><img src="assets/method-paper.webp" decoding="async" loading="lazy" width="3200" height="1123" alt="Original InstantHDR method diagram: geometry-guided appearance modeling and scene-specific tone mapping." /></a>
         </figure>
         <div class="innovation-copy">
           <p><strong>Geometry-guided appearance fusion.</strong> We reuse attention from the frozen geometry branch to find cross-view correspondences and fuse complementary exposure information. Difference of Gaussians restores fine pixel-level details lost during patch-level fusion.</p>
@@ -74,17 +74,17 @@
         <div class="section-title centered"><h2>Ablations &amp; Analysis</h2></div>
         <figure>
           <h3>Why each component matters</h3>
-          <a href="assets/ablation-components.png" target="_blank" rel="noreferrer"><img src="assets/ablation-components.png" width="2400" height="553" loading="lazy" alt="Ground truth, full InstantHDR, and variants without cross-view attention, exposure normalization, or upsampling." /></a>
+          <a href="assets/ablation-components.png" target="_blank" rel="noreferrer"><img src="assets/ablation-components.webp" decoding="async" width="2400" height="553" loading="lazy" alt="Ground truth, full InstantHDR, and variants without cross-view attention, exposure normalization, or upsampling." /></a>
           <figcaption>Removing cross-view attention introduces ghosting; removing exposure normalization shifts brightness; removing upsampling blurs fine details.</figcaption>
         </figure>
         <figure>
           <h3>Correspondence across views and exposures</h3>
-          <a href="assets/ablation-attention.png" target="_blank" rel="noreferrer"><img src="assets/ablation-attention.png" width="2400" height="746" loading="lazy" alt="Geometry attention maps matching leaf, doorframe, cup, and mirror patches across viewpoints and exposures." /></a>
+          <a href="assets/ablation-attention.png" target="_blank" rel="noreferrer"><img src="assets/ablation-attention.webp" decoding="async" width="2400" height="746" loading="lazy" alt="Geometry attention maps matching leaf, doorframe, cup, and mirror patches across viewpoints and exposures." /></a>
           <figcaption>The frozen geometry encoder matches corresponding patches across large viewpoint and exposure changes, guiding appearance fusion.</figcaption>
         </figure>
         <figure>
           <h3>Adapting tone mapping to each scene</h3>
-          <a href="assets/ablation-tonemapping.png" target="_blank" rel="noreferrer"><img src="assets/ablation-tonemapping.png" width="2400" height="307" loading="lazy" alt="Learned monotonic camera-response curves for the Box, Bear, and Dog scenes." /></a>
+          <a href="assets/ablation-tonemapping.png" target="_blank" rel="noreferrer"><img src="assets/ablation-tonemapping.webp" decoding="async" width="2400" height="307" loading="lazy" alt="Learned monotonic camera-response curves for the Box, Bear, and Dog scenes." /></a>
           <figcaption>MetaNet learns distinct, monotonic response curves for different scenes; Box saturates earlier than the other examples.</figcaption>
         </figure>
       </section>
@@ -94,7 +94,7 @@
           <p>168 photorealistic indoor scenes rendered in Blender for generalizable HDR reconstruction.</p>
         </div>
         <figure>
-          <a href="assets/dataset-paper.png" target="_blank" rel="noreferrer"><img src="assets/dataset-paper.png" width="2400" height="1011" loading="lazy" alt="HDR-Pretrain examples: multi-exposure LDR images, HDR ground truth, normal and depth maps, with Standard, AgX, and Filmic tone mapping." /></a>
+          <a href="assets/dataset-paper.png" target="_blank" rel="noreferrer"><img src="assets/dataset-paper.webp" decoding="async" width="2400" height="1011" loading="lazy" alt="HDR-Pretrain examples: multi-exposure LDR images, HDR ground truth, normal and depth maps, with Standard, AgX, and Filmic tone mapping." /></a>
           <figcaption>Each viewpoint includes five exposure-bracketed LDR images, 32-bit HDR ground truth, and depth and normal maps; Standard, AgX, and Filmic tone mapping provide diverse camera responses.</figcaption>
         </figure>
         <div class="project-links"><a href="https://huggingface.co/datasets/Bugjudger/HDR_Pretrain" target="_blank" rel="noreferrer">Download on Hugging Face</a></div>
