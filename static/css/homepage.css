@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Jon Barron typography; all original homepage layout rules stay in index.html. */
+body { font-family:'Lato',Helvetica,Arial,sans-serif; color:#000; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+#main-pub-card-container .pub-card .authors a:hover,
+#main-pub-card-container .pub-card .authors a:focus { color:#f09228; }
+
+/* Research heading, linked titles, and the reference template's award highlight. */
+.research-intro { margin:0 0 16px; font-size:1rem; line-height:1.4; }
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .title,
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .title a { color:#1772d0; font-weight:700; }
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .title a:hover,
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .title a:focus { color:#f09228; }
+#main-pub-card-container .pub-card.award-paper,
+#main-pub-card-container .pub-card.featured-paper { background-color:#ffffd0; margin-bottom:12px; }
+
+/* Keep the original photo proportions within the circular avatar. */
+#main-content-container .col-avatar .avatar { object-fit:cover; object-position:center; }
+
+/* Typography copied from Jon Barron's homepage: 14px Lato, 32px name,
+   22px regular section headings, bold titles, upright authors, italic venues.
+   Existing columns, widths, image dimensions, and section order are unchanged. */
+body { font-size:14px; line-height:normal; }
+#main-info-container .col-name .name { font-size:32px; font-weight:400; font-family:'Lato',Helvetica,Arial,sans-serif; }
+#main-info-container .col-name .email { font-size:14px; }
+#main-bio-container, .research-intro { font-size:14px; line-height:normal; }
+#main-news-container .subtitle, #main-pub-container .subtitle { font-size:22px; font-weight:400; line-height:normal; }
+#main-pub-card-container .pub-card { font-size:14px; line-height:normal; }
+#main-pub-card-container .pub-card .title { font-size:14px; font-weight:700; line-height:normal; }
+#main-pub-card-container .pub-card .authors,
+#main-pub-card-container .pub-card .authors.authors-compact { font-size:14px; font-style:normal; font-weight:400; line-height:normal; color:#000; }
+#main-pub-card-container .pub-card .authors a,
+#main-pub-card-container .pub-card .authors u { white-space:nowrap; }
+#main-pub-card-container .pub-card .authors u { font-weight:700; }
+#main-pub-card-container .pub-card .conference { font-size:14px; font-weight:400; font-style:normal; }
+#main-pub-card-container .pub-card .conference em { font-style:italic; }
+#main-pub-card-container .pub-card .conference .award,
+#main-pub-card-container .pub-card .conference .award-highlight { font-style:normal; font-weight:700; }
+.award { color:#d40000; }
+.award-highlight, #main-news-container .news-award.award-highlight { color:#c64848; }
+#main-pub-card-container .pub-card .info { font-size:14px; line-height:normal; }
+#main-pub-card-container .pub-card .paper-desc { margin:14px 0 0; font-size:14px; line-height:normal; color:#000; }
+#footer, #footer .copyright { font-size:13px; }
+@media(max-width:640px) { #main-info-container .col-name .name { font-size:28px; } }
+
+/* Align images and text consistently across Research, Experience, Teaching and Projects. */
+@media(min-width:640px) {
+ #main-pub-card-container .pub-card > .row { flex-wrap:nowrap; align-items:center; }
+ #main-pub-card-container .pub-card .col-l { flex:0 0 34%; max-width:34%; padding-right:24px; }
+ #main-pub-card-container .pub-card .col-r { flex:0 0 66%; max-width:66%; padding-right:12px; }
+}
+#main-pub-card-container .pub-card .paper-desc { margin-top:6px; }
+
+/* Contact row and the same pale-yellow research legend as the paper rows. */
+.contact-links { margin-top:4px; }
+.research-highlight-key { background-color:#ffffd0; }

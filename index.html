@@ -20,12 +20,12 @@
     <meta property="og:image" content="images/dingqiang.png">
 
     <style type="text/css">
-body{margin:0;padding:0;background-color:#eee;}
-a{color:#8d5638}
-a:hover{color:#bc6262}
+body{margin:0;padding:0;background-color:#fff;}
+a{color:#1772d0}
+a:hover{color:#f09228}
 #main{z-index:2;margin:0 auto;position:absolute;top:1%;width:100%;min-width:240px;text-align:center;}
 
-#main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;}
+#main-content{background:#ffffff;padding:0;text-align:center;cursor:default;}
 #main-content{margin-left:6.5104167%;width:86.9791667%;}
 @media (min-width: 768px) {
     #main-content{width:75%;min-width:668px;margin:0 auto}
@@ -48,26 +48,37 @@ a:hover{color:#bc6262}
 #main-info-container{padding-top:15px}
 #main-info-container .col-name{text-align:center}
 #main-info-container .col-name .textbox-info{display:inline-block;margin:0 auto;text-align:left}
-#main-info-container .col-name .name{margin:0;color:#566c7f;font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
-#main-info-container .col-name .email{color:#666; font-size:14px}
+#main-info-container .col-name .name{margin:0;color:#000000;font-size:1.85em;font-family:"Lato",Helvetica,Arial,sans-serif}
+#main-info-container .col-name .email{color:#000; font-size:14px}
 
 #main-more-container{background:#ffffff;width:100%;padding:0 30px}
 
 #main-bio-container{margin:auto;padding:0;max-width:1080px;text-align:left;padding-top:30px;font-size:1rem;line-height:1.4}
-#main-bio-container .subtitle{margin-top:30px;color:#566c7f}
+#main-bio-container .subtitle{margin-top:30px;color:#000000}
+
+#main-news-container{margin:4px auto 0;padding:0;max-width:1080px;text-align:left;}
+#main-news-container .subtitle{margin:0 0 10px;color:#000000;}
+#main-news-container ul{list-style:none;padding:0;margin:0;}
+#main-news-container li{display:flex;align-items:baseline;gap:8px;margin:0;font-size:14px;font-weight:400;line-height:1.45;color:#000;}
+#main-news-container time{flex:0 0 68px;color:#555;font-variant-numeric:tabular-nums;white-space:nowrap;}
+#main-news-container a{color:#1772d0;font-weight:400;text-decoration:none;}
+#main-news-container a:hover,#main-news-container a:focus-visible{color:#f09228;text-decoration:underline;}
+#main-news-container .news-award{color:#d40000;font-weight:700;font-style:normal;}
+#main-news-container .news-thanks{margin:8px 0 0;font-size:0.8rem;color:#555;font-style:italic;}
+@media(max-width:575px){#main-news-container li{gap:8px;}#main-news-container time{flex-basis:64px;}}
 
 #main-pub-container{margin:auto;padding:0;max-width:1080px;text-align:left;padding-top:30px}
-#main-pub-container .subtitle{color:#566c7f;}
+#main-pub-container .subtitle{color:#000000;}
 #main-pub-container .subtitle a {font-weight:400;font-size:18px}
-#main-pub-container .subtitle a.activated {color:#333333}
+#main-pub-container .subtitle a.activated {color:#000000}
 #main-pub-container .subtitle a.activated:focus,
 #main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
 
 #main-pub-container .subtitle-aux {font-size:1rem}
-#main-pub-container .subtitle-aux a.activated {color:#333333}
+#main-pub-container .subtitle-aux a.activated {color:#000000}
 #main-pub-container .subtitle-aux a.activated:focus,
 #main-pub-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
-#main-pub-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
+#main-pub-container .subtitle-aux .note{margin-left:1em;color:#555555;text-decoration:none;font-size:14px}
 
 #main-pub-card-container>h5{margin-bottom: 20px}
 #main-pub-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
@@ -76,28 +87,29 @@ a:hover{color:#bc6262}
 #main-pub-card-container .pub-card img{width:100%;margin:0 auto}
 #main-pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
 #main-pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
-#main-pub-card-container .pub-card .authors{font-style:italic;font-size: 0.9em;     font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
-#main-pub-card-container .pub-card .authors a{color:#666666}
+#main-pub-card-container .pub-card .authors{font-style:normal;font-size: 0.9em;     font-weight:400;color:#000000;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors a{color:#1772d0}
 #main-pub-card-container .pub-card .authors.authors-compact{font-size:0.83rem;line-height:1.4}
 #main-pub-card-container .pub-card .authors.authors-compact a,
 #main-pub-card-container .pub-card .authors.authors-compact u{white-space:nowrap}
-#main-pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
-#main-pub-card-container .pub-card .conference{color:#333333;font-weight:600}
+#main-pub-card-container .pub-card .authors u{color:#000000;font-weight:600;text-decoration:none}
+#main-pub-card-container .pub-card .conference{color:#000000;font-weight:400;font-style:italic}
 #main-pub-card-container .pub-card .info{margin-bottom:0;}
 #main-pub-card-container .row{margin:0}
 #main-pub-card-container .col-l,
 #main-pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
 
-#footer{padding:1.5em 0 1.5em;min-width:240px;background:#f4f4f4;opacity:0.95;font-size:14px;line-height:12px;text-align:left}
+#footer{padding:1.5em 0 1.5em;min-width:240px;background:#ffffff;opacity:0.95;font-size:14px;line-height:12px;text-align:left}
 #footer .container{max-width:540px;padding:0 45px}
 #footer .row{align-items:center}
 #footer .copyright{flex-grow:1;margin:5px auto 5px;text-align:left;display:block;font-size:14px;line-height:1.4}
-#footer a{color:#666666}
-#footer a:hover{color:#333333}
+#footer a{color:#000000}
+#footer a:hover{color:#000000}
 
 .bold{font-weight:600}
 .hide{display:none}
     </style>
+    <link rel="stylesheet" href="static/css/homepage.css">
 </head>
 
 <body>
@@ -116,12 +128,12 @@ a:hover{color:#bc6262}
                         <div class="col-md-12 col-xl-6 col-name">
                             <div class="textbox-info">
                                 <h1 class="name"><span>Dingqiang Ye</span></h1>
-                                <p class="email">Email: bugjudger [at] gmail [dot] com <br>
-
-                                <a href="https://scholar.google.com/citations?user=7ZlxRjgAAAAJ&hl=en">Google Scholar</a> /
-                                <a href="https://github.com/bugjudger">Github</a> /
-                                <a href="CV/DingqiangYe-Resume.pdf">CV</a>
-
+                                <p class="email contact-links">
+                                    <a href="mailto:bugjudger@gmail.com">Email</a> /
+                                    <a href="https://scholar.google.com/citations?user=7ZlxRjgAAAAJ&amp;hl=en">Google Scholar</a> /
+                                    <a href="https://github.com/bugjudger">GitHub</a> /
+                                    <a href="CV/DingqiangYe-Resume.pdf">CV</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -139,37 +151,81 @@ a:hover{color:#bc6262}
                 advised by <a href="https://yushiqi.cn">Prof. Shiqi Yu</a>.
                 In 2024, I was also fortunate to spend eight months as a research scholar at <a href="https://msu.edu">Michigan State University</a>,
                 supervised by <a href="https://cs.unc.edu/person/xiaoming-liu/">Prof. Xiaoming Liu</a>.
-            <br>
-            <br>
-            My research goal is to develop intelligent recognition systems that can accurately re-identify objects in the physical world and have a positive impact on people's lives.
-            To this end, my research interests lie at vision foundation models, object re-identification and generative AI.
-            Currently, I am working on leveraging large vision models to identify human subjects at a distance.
-
-            <br>
-            <br>
-
+                I am seeking research internship opportunities and welcome discussions and collaborations. Feel free to <a href="mailto:bugjudger@gmail.com">get in touch</a>!
             </p>
 
         </div>
 
+        <section id="main-news-container" aria-labelledby="news-heading">
+            <h5 class="subtitle" id="news-heading">News</h5>
+            <ul>
+                <li><time datetime="2026-09">[2026.09]</time><span>Our paper <a href="#pub-puppetgait">PuppetGait</a> was accepted to NeurIPS 2026.</span></li>
+                <li><time datetime="2026-06">[2026.06]</time><span>Two papers accepted to ECCV 2026: <a href="https://link.springer.com/chapter/10.1007/978-3-032-37435-6_25">FoundationGait</a> (<strong class="news-award award">Spotlight</strong>) and <a href="https://bugjudger.github.io/InstantHDR/">InstantHDR</a>.</span></li>
+                <li><time datetime="2026-02">[2026.02]</time><span>Our paper <a href="#pub-gaitmax">GaitMax</a> was accepted to CVPR 2026 (<strong class="news-award award-highlight">Highlight</strong>).</span></li>
+                <li><time datetime="2025-09">[2025.09]</time><span>Our paper <a href="https://www.proceedings.com/content/085/085713-2465open.pdf">BiggerGait</a> was accepted to NeurIPS 2025.</span></li>
+                <li><time datetime="2025-02">[2025.02]</time><span>Our paper <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Kim_SapiensID_Foundation_for_Human_Recognition_CVPR_2025_paper.pdf">SapiensID</a> was accepted to CVPR 2025.</span></li>
+            </ul>
+            <p class="news-thanks">Many thanks to all my collaborators!</p>
+        </section>
+
         <div id="main-pub-container">
-            <h5 class="subtitle">Publications
-            (
-                <a id="publication-by-selected" href="javascript:;", onClick="publicationBySelected();">show selected</a> /
-                <a id="publication-by-date" href="javascript:;", onClick="publicationByDate();">show by date</a> /
-                <a id="publication-by-topic" href="javascript:;", onClick="publicationByTopic();">show by topic</a>
-            )
-            </h5>
-            <p class="subtitle-aux"><span class="bold">Topics:</span>
+            <h5 class="subtitle" id="research-heading">Research</h5>
+            <p class="research-intro">My research focuses on video understanding, world models, multimodal agents, and human recognition.
+            Selected papers are <span class="research-highlight-key">highlighted</span>.</p>
 
-                <a href="#topic-computer-vision" onClick="return publicationByTopicSpecific(this)" data-topic="computer-vision">Computer Vision</a> /
+            <div id="main-pub-card-container">
 
-                <span class="note">(* indicates equal contribution and <sup>†</sup> indicates equal advising)</span>
-            </p>
+                <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2026" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2026-RecurrentVLM.webp" alt="RecurrentVLM overview from Figure 1" width="100%"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title"><a href="https://arxiv.org/pdf/2611.25210">Recurrent Vision Language Models Solve the Shell Game</a></h5>
+                                <h6 class="authors">
+                                    <u>Dingqiang Ye</u>,
+                                    <a href="https://www.jiacongxu.net/">Jiacong Xu</a>,
+                                    <a href="https://kkwenz.github.io/">Wen Zhang</a>,
+                                    <a href="https://yiqunmei.net/">Yiqun Mei</a>,
+                                    <a href="https://engineering.jhu.edu/faculty/vishal-patel/">Vishal M. Patel</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference"><em>arXiv</em>, 2026</span><br>
+                                    <a href="https://arxiv.org/pdf/2611.25210">Paper</a>
+                                    <br>
+                                </p>
+                                <p class="paper-desc">Recurrent attention lets VLMs track hidden objects through long videos and generalize to shell games longer than those seen during training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div id="main-pub-card-container" class="hide">
+                <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2026" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2026-IDWorld-method.webp" alt="IDWorld method overview from Figure 2: explicit supervision, latent imagination, and adaptive fusion" width="100%"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title"><a href="https://arxiv.org/pdf/2611.25204">Identity World Model: Recognizing People in an Imagined Latent World</a></h5>
+                                <h6 class="authors">
+                                    <u>Dingqiang Ye</u>,
+                                    <a href="https://kartik-3004.github.io/portfolio/">Kartik Narayan</a>,
+                                    <a href="https://engineering.jhu.edu/faculty/vishal-patel/">Vishal M. Patel</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference"><em>arXiv</em>, 2026</span><br>
+                                    <a href="https://arxiv.org/pdf/2611.25204">Paper</a>
+                                    <br>
+                                </p>
+                                <p class="paper-desc">Imagining how a person would look under different conditions in latent space makes recognition more robust, without generating images.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
+                <div id="pub-puppetgait" class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2026-PuppetGait.webp" alt="PuppetGait framework overview from Figure 2" width="100%"/>
@@ -188,11 +244,12 @@ a:hover{color:#bc6262}
                                     <a href="https://yushiqi.cn/">Shiqi Yu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">NeurIPS 2026</span>
-                                    / <span>Paper</span>
+                                    <span class="conference"><em>NeurIPS</em>, 2026</span><br>
+                                    <span>Paper</span>
                                     / <a href="https://github.com/ShiqiYu/OpenGait">Code</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">Aligning large vision model features to a 3D body representation improves gait recognition across changes in viewpoint and pose.</p>
                             </div>
                         </div>
                     </div>
@@ -205,7 +262,7 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">VideoResearcher: Self-Improving Tool Design for Long-Video Understanding</h5>
+                                <h5 class="title"><a href="https://arxiv.org/pdf/2609.19664">VideoResearcher: Self-Improving Tool Design for Long-Video Understanding</a></h5>
                                 <h6 class="authors authors-compact">
                                     <u>Dingqiang Ye*</u>,
                                     <a href="https://scholar.google.com/citations?user=Ntf_xiAAAAAJ&amp;hl=en" title="Equal contribution; team lead">Dongdi Zhao*</a>,
@@ -223,10 +280,11 @@ a:hover{color:#bc6262}
                                     <a href="https://scholar.google.com/citations?user=cNQbb3wAAAAJ&amp;hl=en" title="Corresponding author">Di Fu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">arXiv 2026</span>
-                                    / <a href="https://arxiv.org/pdf/2609.19664">Paper</a>
+                                    <span class="conference"><em>arXiv</em>, 2026</span><br>
+                                    <a href="https://arxiv.org/pdf/2609.19664">Paper</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">Video agents design, test, and refine their own tools to answer questions about long videos, without updating model weights.</p>
                             </div>
                         </div>
                     </div>
@@ -239,7 +297,7 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding</h5>
+                                <h5 class="title"><a href="https://arxiv.org/abs/2608.25356">Where to Look Matters: On-Policy Self-Distillation for Long-Video Understanding</a></h5>
                                 <h6 class="authors">
                                     <a href="https://kaishen-wang.github.io/">Kaishen Wang</a>,
                                     <a href="https://scholar.google.com/citations?user=Ntf_xiAAAAAJ&amp;hl=en">Dongdi Zhao</a>,
@@ -250,11 +308,11 @@ a:hover{color:#bc6262}
                                     <a href="https://scholar.google.com/citations?user=cNQbb3wAAAAJ&amp;hl=en">Di Fu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">arXiv 2026</span>
-                                    /
+                                    <span class="conference"><em>arXiv</em>, 2026</span><br>
                                     <a href="https://arxiv.org/abs/2608.25356">Paper</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">A teacher that sees relevant video clues guides a full-video student, improving long-video understanding without answer labels.</p>
                             </div>
                         </div>
                     </div>
@@ -267,7 +325,7 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title"><a href="https://bugjudger.github.io/InstantHDR/" style="color:#000;">InstantHDR: Single-forward Gaussian Splatting Initialization for HDR 3D Reconstruction</a></h5>
+                                <h5 class="title"><a href="https://bugjudger.github.io/InstantHDR/">InstantHDR: Single-forward Gaussian Splatting Initialization for HDR 3D Reconstruction</a></h5>
                                 <h6 class="authors">
                                     <u>Dingqiang Ye*</u>,
                                     <a href="https://www.jiacongxu.net">Jiacong Xu*</a>,
@@ -277,26 +335,26 @@ a:hover{color:#bc6262}
                                     <a href="https://engineering.jhu.edu/faculty/vishal-patel/">Vishal M. Patel</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">ECCV 2026</span>
-                                    /
+                                    <span class="conference"><em>ECCV</em>, 2026</span><br>
                                     <a href="https://link.springer.com/chapter/10.1007/978-3-032-37595-7_12">Paper</a>
                                     / <a href="https://github.com/Bugjudger/InstantHDR">Code</a>
                                     / <a href="https://huggingface.co/datasets/Bugjudger/HDR_Pretrain">Dataset</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">A single forward pass initializes an HDR 3D Gaussian scene from uncalibrated images captured at different exposures.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
+                <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2026-FoundationGait.webp" width="100%" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Silhouette-based Gait Foundation Model</h5>
+                                <h5 class="title"><a href="https://link.springer.com/chapter/10.1007/978-3-032-37435-6_25">Silhouette-based Gait Foundation Model</a></h5>
                                 <h6 class="authors authors-compact">
                                     <u>Dingqiang Ye</u>,
                                     <a href="https://scholar.google.com/citations?user=lgDtKZcAAAAJ&amp;hl=zh-CN">Chao Fan</a>,
@@ -307,25 +365,25 @@ a:hover{color:#bc6262}
                                     <a href="https://engineering.jhu.edu/faculty/vishal-patel/">Vishal M. Patel</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">ECCV 2026 <span style="color: #B5302A;">(Spotlight)</span></span>
-                                    /
+                                    <span class="conference"><em>ECCV</em>, 2026 <strong class="award">(Spotlight)</strong></span><br>
                                     <a href="https://link.springer.com/chapter/10.1007/978-3-032-37435-6_25">Paper</a>
                                     / <a href="https://github.com/ShiqiYu/OpenGait">Code</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">Self-supervised pretraining across gait datasets builds a scalable foundation for recognition, health screening, and attribute estimation.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
+                <div id="pub-gaitmax" class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2026-GaitMax.svg" width="100%" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition</h5>
+                                <h5 class="title"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf">Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition</a></h5>
                                 <h6 class="authors">
                                     <a href="https://zbhuang.com">Zhanbo Huang</a>,
                                     <u>Dingqiang Ye</u>,
@@ -333,12 +391,12 @@ a:hover{color:#bc6262}
                                     <a href="https://www.egr.msu.edu/~yukong/">Yu Kong</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">CVPR 2026 <span style="color: #B5302A;">(Highlight)</span></span>
-                                    /
+                                    <span class="conference"><em>CVPR</em>, 2026 <strong class="award-highlight">(Highlight)</strong></span><br>
                                     <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf">Paper</a>
                                     / <a href="https://github.com/actionlab-cv/GaitMax">Code</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">Combining global semantics with body-part motion captures richer gait patterns while reducing reliance on clothing and viewpoint.</p>
                             </div>
                         </div>
                     </div>
@@ -351,7 +409,7 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">BiggerGait: Unlocking Gait Recognition with Layer-wise Representations from Large Vision Models</h5>
+                                <h5 class="title"><a href="https://www.proceedings.com/content/085/085713-2465open.pdf">BiggerGait: Unlocking Gait Recognition with Layer-wise Representations from Large Vision Models</a></h5>
                                 <h6 class="authors authors-compact">
                                     <u>Dingqiang Ye*</u>,
                                     <a href="https://scholar.google.com/citations?user=lgDtKZcAAAAJ&amp;hl=zh-CN">Chao Fan*</a>,
@@ -362,14 +420,13 @@ a:hover{color:#bc6262}
                                     <a href="https://cs.unc.edu/person/xiaoming-liu/">Xiaoming Liu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">NeurIPS 2025</span>
-                                    /
-
+                                    <span class="conference"><em>NeurIPS</em>, 2025</span><br>
                                     <a href="https://www.proceedings.com/content/085/085713-2465open.pdf">Paper</a>
                                     / <a href="https://github.com/ShiqiYu/OpenGait">Code</a>
 
                                     <br>
                                 </p>
+                                <p class="paper-desc">Complementary features from different layers of large vision models improve gait recognition with fewer hand-designed gait priors.</p>
                             </div>
                         </div>
                     </div>
@@ -382,7 +439,7 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">SapiensID: Foundation for Human Recognition</h5>
+                                <h5 class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Kim_SapiensID_Foundation_for_Human_Recognition_CVPR_2025_paper.pdf">SapiensID: Foundation for Human Recognition</a></h5>
                                 <h6 class="authors">
                                     <a href="https://mckim.dev">Minchul Kim</a>,
                                     <u>Dingqiang Ye</u>,
@@ -391,27 +448,26 @@ a:hover{color:#bc6262}
                                     <a href="https://cs.unc.edu/person/xiaoming-liu/">Xiaoming Liu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">CVPR 2025</span>
-                                    /
-
+                                    <span class="conference"><em>CVPR</em>, 2025</span><br>
                                     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Kim_SapiensID_Foundation_for_Human_Recognition_CVPR_2025_paper.pdf">Paper</a>
                                     / <a href="https://github.com/mk-minchul/sapiensid">Code</a>
 
                                     <br>
                                 </p>
+                                <p class="paper-desc">One model unifies face and body recognition across changes in pose, visibility, and image scale.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="pub-card" data-topic="computer-vision" data-year="2024" data-selected="true">
+                <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2024" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/projects/2024-BigGait.webp" width="100%" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">BigGait: Learning Gait Representation You Want by Large Vision Models</h5>
+                                <h5 class="title"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf">BigGait: Learning Gait Representation You Want by Large Vision Models</a></h5>
                                 <h6 class="authors">
                                     <u>Dingqiang Ye*</u>,
                                     <a href="https://scholar.google.com/citations?user=lgDtKZcAAAAJ&amp;hl=zh-CN">Chao Fan*</a>,
@@ -420,14 +476,13 @@ a:hover{color:#bc6262}
                                     <a href="https://yushiqi.cn">Shiqi Yu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">CVPR 2024</span>
-                                    /
-
+                                    <span class="conference"><em>CVPR</em>, 2024</span><br>
                                     <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf">Paper</a>
                                     / <a href="https://github.com/ShiqiYu/OpenGait">Code</a>
 
                                     <br>
                                 </p>
+                                <p class="paper-desc">General-purpose vision features become gait representations without requiring supervised silhouettes or other task-specific preprocessing.</p>
                             </div>
                         </div>
                     </div>
@@ -440,7 +495,7 @@ a:hover{color:#bc6262}
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">GaitEditer: Attribute Editing for Gait Representation Learning</h5>
+                                <h5 class="title"><a href="https://arxiv.org/pdf/2303.05076v1">GaitEditer: Attribute Editing for Gait Representation Learning</a></h5>
                                 <h6 class="authors">
                                     <u>Dingqiang Ye*</u>,
                                     <a href="https://scholar.google.com/citations?user=MmUXajwAAAAJ&amp;hl=zh-CN">Jingzhe Ma*</a>,
@@ -448,10 +503,11 @@ a:hover{color:#bc6262}
                                     <a href="https://yushiqi.cn">Shiqi Yu</a>
                                 </h6>
                                 <p class="info">
-                                    <span class="conference">arXiv 2023</span>
-                                    / <a href="https://arxiv.org/pdf/2303.05076v1">Paper</a>
+                                    <span class="conference"><em>arXiv</em>, 2023</span><br>
+                                    <a href="https://arxiv.org/pdf/2303.05076v1">Paper</a>
                                     <br>
                                 </p>
+                                <p class="paper-desc">Editing clothing, viewpoint, and other gait attributes creates diverse training sequences while preserving identity and temporal continuity.</p>
                             </div>
                         </div>
                     </div>
@@ -605,126 +661,5 @@ a:hover{color:#bc6262}
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
-
-$.fn.isInViewport = function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-
-var allPublications = null;
-
-function publicationBySelected() {
-    var a = $("#publication-by-selected")
-    if (a.hasClass("activated")) {
-        return ;
-    }
-
-    $("#main-pub-container .subtitle a").removeClass("activated");
-    $("#main-pub-container .subtitle-aux a").removeClass("activated");
-    a.addClass("activated");
-
-    $("#main-pub-card-container").html("");
-    for (var pubId = 0; pubId < allPublications.length; pubId++) {
-        var pub = $(allPublications[pubId]);
-        if (pub.data("selected") == true) {
-            $("#main-pub-card-container").append(pub);
-        }
-    }
-}
-
-function publicationByDate() {
-    var a = $("#publication-by-date")
-    if (a.hasClass("activated")) {
-        return ;
-    }
-
-    $("#main-pub-container .subtitle a").removeClass("activated");
-    $("#main-pub-container .subtitle-aux a").removeClass("activated");
-    a.addClass("activated");
-
-    $("#main-pub-card-container").html("");
-    for (var pubId = 0; pubId < allPublications.length; pubId++) {
-        if (pubId == 0 || $(allPublications[pubId-1]).data("year") != $(allPublications[pubId]).data("year")) {
-            var year = $(allPublications[pubId]).data("year");
-            $("#main-pub-card-container").append($("<h5 id='year-" + year.toString() + "'>" + year.toString() + "</h5>"));
-        }
-        $("#main-pub-card-container").append(allPublications[pubId]);
-    }
-}
-
-function publicationByTopicInner() {
-    var a = $("#publication-by-topic")
-    if (a.hasClass("activated")) {
-        return ;
-    }
-    $("#main-pub-container .subtitle a").removeClass("activated");
-    a.addClass("activated");
-
-    $("#main-pub-card-container").html("");
-    for (var topicId in allTopics) {
-        var topic = allTopics[topicId].name;
-        var topicTitle = allTopics[topicId].title;
-        // var topicTitle = topic.split("-").map(function (a) { return a[0].toUpperCase() + a.substr(1).toLowerCase(); }).join(" ");
-        $("#main-pub-card-container").append($("<h5 id='topic-" + topic + "'>" + topicTitle + "</h5>"));
-        for (var pubId = 0; pubId < allPublications.length; pubId++) {
-            var pub = $(allPublications[pubId]);
-            if (pub.data("topic").indexOf(topic) != -1) {
-                $("#main-pub-card-container").append(pub);
-            }
-        }
-    }
-}
-
-function publicationByTopicSpecificInner(a) {
-    if ($(a).hasClass("activated")) {
-        return false;
-    }
-
-    $("#main-pub-container .subtitle-aux a").removeClass("activated");
-    $(a).addClass("activated");
-}
-
-function publicationByTopic() {
-    publicationByTopicInner();
-    publicationByTopicSpecificInner($("#main-pub-container .subtitle-aux a:first"));
-    return true;
-}
-
-function publicationByTopicSpecific(a) {
-    publicationByTopicInner();
-    publicationByTopicSpecificInner(a);
-
-    var hash = a.hash;
-    $(hash).prop('id', hash.substr(1) + '-noscroll');
-    window.location.hash = hash;
-    $(hash + '-noscroll').prop('id', hash.substr(1));
-
-    if (!$(hash).isInViewport()) {
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 1000, function(){
-        });
-    }
-
-    return false;
-}
-
-$(function() {
-    allPublications = $("#main-pub-card-container .pub-card");
-    allTopicsLink = $("#main-pub-container .subtitle-aux a");
-    allTopics = [];
-    for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
-        allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
-    }
-
-    $("#publication-by-selected").click();
-    $("#main-pub-card-container").removeClass("hide");
-});
-</script>
 </body>
 </html>

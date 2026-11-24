@@ -1,3 +1,6 @@
 .vscode/**
 .DS_Store
 **/.DS_Store
+
+# Local design checkpoints (never publish)
+.local-backups/
