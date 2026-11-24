@@ -1,0 +1,210 @@
+[
+  {
+    "asset": "recurrent.webp",
+    "source": "recurrent-002.jpg",
+    "crop_xywh": [
+      40,
+      45,
+      520,
+      310
+    ]
+  },
+  {
+    "asset": "idworld-input.webp",
+    "source": "idworld-cases.png",
+    "crop_xywh": [
+      1317,
+      246,
+      90,
+      144
+    ]
+  },
+  {
+    "asset": "idworld-latent.webp",
+    "source": "idworld-cases.png",
+    "crop_xywh": [
+      1613,
+      260,
+      80,
+      130
+    ]
+  },
+  {
+    "asset": "puppet-rgb.webp",
+    "source": "2026-PuppetGait.webp",
+    "crop_xywh": [
+      74,
+      151,
+      53,
+      108
+    ]
+  },
+  {
+    "asset": "puppet-geometry.webp",
+    "source": "2026-PuppetGait.webp",
+    "crop_xywh": [
+      235,
+      373,
+      100,
+      144
+    ]
+  },
+  {
+    "asset": "video-lion.webp",
+    "source": "videoresearcher-case.png",
+    "crop_xywh": [
+      297,
+      73,
+      224,
+      93
+    ]
+  },
+  {
+    "asset": "video-zebra.webp",
+    "source": "videoresearcher-case.png",
+    "crop_xywh": [
+      801,
+      73,
+      226,
+      93
+    ]
+  },
+  {
+    "asset": "clue-context.webp",
+    "source": "clue-example.png",
+    "crop_xywh": [
+      48,
+      49,
+      1108,
+      103
+    ]
+  },
+  {
+    "asset": "clue-evidence.webp",
+    "source": "clue-example.png",
+    "crop_xywh": [
+      430,
+      425,
+      180,
+      104
+    ]
+  },
+  {
+    "asset": "instanthdr.webp",
+    "source": "instanthdr-bear.png",
+    "crop_xywh": [
+      0,
+      70,
+      448,
+      300
+    ]
+  },
+  {
+    "asset": "foundation-before.webp",
+    "paper": "foundationgait",
+    "page": 5,
+    "crop_xywh_at_1100px": [
+      397,
+      761,
+      122,
+      44
+    ]
+  },
+  {
+    "asset": "foundation-after.webp",
+    "paper": "foundationgait",
+    "page": 5,
+    "crop_xywh_at_1100px": [
+      543,
+      761,
+      119,
+      44
+    ]
+  },
+  {
+    "asset": "gaitmax-372.webp",
+    "source": "gaitmax-image-372.png",
+    "crop_xywh": [
+      15,
+      18,
+      195,
+      405
+    ]
+  },
+  {
+    "asset": "gaitmax-374.webp",
+    "source": "gaitmax-image-374.png",
+    "crop_xywh": [
+      15,
+      18,
+      195,
+      405
+    ]
+  },
+  {
+    "asset": "bigger-layers.webp",
+    "paper": "biggergait",
+    "page": 5,
+    "crop_xywh_at_1100px": [
+      153,
+      100,
+      193,
+      144
+    ]
+  },
+  {
+    "asset": "sapiens-pair.webp",
+    "paper": "sapiensid",
+    "page": 8,
+    "crop_xywh_at_1100px": [
+      607,
+      102,
+      104,
+      99
+    ]
+  },
+  {
+    "asset": "biggait-rgb.webp",
+    "paper": "biggait",
+    "page": 6,
+    "crop_xywh_at_1100px": [
+      215,
+      285,
+      36,
+      65
+    ]
+  },
+  {
+    "asset": "biggait-feature.webp",
+    "paper": "biggait",
+    "page": 6,
+    "crop_xywh_at_1100px": [
+      174,
+      285,
+      35,
+      65
+    ]
+  },
+  {
+    "asset": "gaitediter-before.webp",
+    "paper": "gaitediter",
+    "page": 8,
+    "crop_xywh_at_1100px": [
+      281,
+      106,
+      85,
+      42
+    ]
+  },
+  {
+    "asset": "gaitediter-after.webp",
+    "paper": "gaitediter",
+    "page": 8,
+    "crop_xywh_at_1100px": [
+      651,
+      106,
+      85,
+      42
+    ]
+  }
+]

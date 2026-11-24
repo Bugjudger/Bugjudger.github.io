@@ -109,7 +109,8 @@ a:hover{color:#f09228}
 .bold{font-weight:600}
 .hide{display:none}
     </style>
-    <link rel="stylesheet" href="static/css/homepage.css?v=20261124-8">
+    <link rel="stylesheet" href="static/css/homepage.css?v=20261124-unified-type-roles">
+    <link rel="stylesheet" href="static/css/research-media.css?v=20261124-aligned-experience"/>
 </head>
 
 <body>
@@ -159,18 +160,19 @@ a:hover{color:#f09228}
         <section id="main-news-container" aria-labelledby="news-heading">
             <h5 class="subtitle" id="news-heading">News</h5>
             <ul>
-                <li><time datetime="2026-09">[2026.09]</time><span>Our paper <a href="#pub-puppetgait">PuppetGait</a> was accepted to NeurIPS 2026.</span></li>
+                <li><time datetime="2026-09">[2026.09]</time><span>Our paper <a href="#pub-puppetgait">PuppetGait</a> <span class="news-role">(co-author)</span> was accepted to NeurIPS 2026.</span></li>
                 <li><time datetime="2026-06">[2026.06]</time><span>Two papers accepted to ECCV 2026: <a href="https://link.springer.com/chapter/10.1007/978-3-032-37435-6_25">FoundationGait</a> (<strong class="news-award award">Spotlight</strong>) and <a href="https://bugjudger.github.io/InstantHDR/">InstantHDR</a>.</span></li>
-                <li><time datetime="2026-02">[2026.02]</time><span>Our paper <a href="#pub-gaitmax">GaitMax</a> was accepted to CVPR 2026 (<strong class="news-award award-highlight">Highlight</strong>).</span></li>
+                <li><time datetime="2026-02">[2026.02]</time><span>Our paper <a href="#pub-gaitmax">GaitMax</a> <span class="news-role">(co-author)</span> was accepted to CVPR 2026 (<strong class="news-award award-highlight">Highlight</strong>).</span></li>
                 <li><time datetime="2025-09">[2025.09]</time><span>Our paper <a href="https://www.proceedings.com/content/085/085713-2465open.pdf">BiggerGait</a> was accepted to NeurIPS 2025.</span></li>
-                <li><time datetime="2025-02">[2025.02]</time><span>Our paper <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Kim_SapiensID_Foundation_for_Human_Recognition_CVPR_2025_paper.pdf">SapiensID</a> was accepted to CVPR 2025.</span></li>
+                <li><time datetime="2025-02">[2025.02]</time><span>Our paper <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Kim_SapiensID_Foundation_for_Human_Recognition_CVPR_2025_paper.pdf">SapiensID</a> <span class="news-role">(co-author)</span> was accepted to CVPR 2025.</span></li>
             </ul>
             <p class="news-thanks">Many thanks to all my collaborators!</p>
         </section>
 
         <div id="main-pub-container">
             <h5 class="subtitle" id="research-heading">Research</h5>
-            <p class="research-intro">My research focuses on video understanding, world models, multimodal agents, and human recognition.
+            <p class="research-intro">I am interested in video understanding, world models, and multimodal agents.
+            Much of my research explores how models can remember, reason about, and recognize people and events in videos.
             Selected papers are <span class="research-highlight-key">highlighted</span>.</p>
 
             <div id="main-pub-card-container">
@@ -178,7 +180,7 @@ a:hover{color:#f09228}
                 <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-RecurrentVLM.webp" alt="RecurrentVLM overview from Figure 1" width="100%"/>
+                            <div class="research-media focus-teaser"><img src="data/projects/teasers/recurrent-poster.webp?v=3" alt="Shell game animation: reveal a red ball, hide it under a cup, shuffle the cups, then reveal the correct final cup" width="360" height="240" decoding="async" data-still="data/projects/teasers/recurrent-poster.webp?v=3" data-animated="data/projects/teasers/recurrent-shell-game.gif?v=5" tabindex="0" role="button" aria-label="Play RecurrentVLM shell game animation" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -204,7 +206,7 @@ a:hover{color:#f09228}
                 <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-IDWorld-method.webp" alt="IDWorld method overview from Figure 2: explicit supervision, latent imagination, and adaptive fusion" width="100%"/>
+                            <div class="research-media focus-teaser"><img alt="IDWorld: size-aligned side and back pixel references reveal predicted latent features" src="data/projects/teasers/idworld-pixel-reference.svg?v=12" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/idworld-pixel-reference.svg?v=12" data-animated="data/projects/teasers/idworld-evidence.svg?v=18" tabindex="0" role="button" aria-label="Show additional idworld evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -228,7 +230,7 @@ a:hover{color:#f09228}
                 <div id="pub-puppetgait" class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-PuppetGait.webp" alt="PuppetGait framework overview from Figure 2" width="100%"/>
+                            <div class="research-media focus-teaser"><img alt="PuppetGait: RGB input, 3D body, and canonical features with fast correspondence markers" src="data/projects/teasers/puppet-body-alignment.svg?v=11" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/puppet-body-alignment.svg?v=11" data-animated="data/projects/teasers/puppet-evidence.svg?v=19" tabindex="0" role="button" aria-label="Show additional puppet evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -258,7 +260,7 @@ a:hover{color:#f09228}
                 <div class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-VideoResearcher.webp" alt="VideoResearcher motivation and automatic video-tool development overview" width="100%"/>
+                            <div class="research-media focus-teaser"><img alt="VideoResearcher: a video agent uses real video evidence to design, test, and refine video tools" src="data/projects/teasers/videoresearcher-tools.svg?v=2" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/videoresearcher-tools.svg?v=2" data-animated="data/projects/teasers/videoresearcher-evidence.svg?v=12" tabindex="0" role="button" aria-label="Show additional videoresearcher evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -293,7 +295,7 @@ a:hover{color:#f09228}
                 <div class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-Clue-OPSD.webp" alt="Overview of Clue-OPSD" width="100%" playsinline autoplay muted loop preload/>
+                            <div class="research-media focus-teaser"><img alt="Clue-OPSD: a clue-conditioned teacher guides a full-video student during training; no clues are needed at test time" src="data/projects/teasers/clue-distillation.svg?v=4" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/clue-distillation.svg?v=4" data-animated="data/projects/teasers/clue-evidence.svg?v=11" tabindex="0" role="button" aria-label="Show additional clue evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -321,7 +323,7 @@ a:hover{color:#f09228}
                 <div class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-InstantHDR.webp" width="100%" playsinline autoplay muted loop preload/>
+                            <div class="research-media focus-teaser"><img alt="InstantHDR bear reconstruction: looping camera motion and exposure changes from the supplementary video" decoding="async" loading="lazy" src="data/projects/teasers/instanthdr-bear-poster.webp?v=3" width="300" height="200" data-still="data/projects/teasers/instanthdr-bear-poster.webp?v=3" data-animated="data/projects/teasers/instanthdr-bear-loop.gif?v=4" tabindex="0" role="button" aria-label="Play InstantHDR reconstruction animation" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -350,7 +352,7 @@ a:hover{color:#f09228}
                 <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-FoundationGait.webp" width="100%" playsinline autoplay muted loop preload/>
+                            <div class="research-media focus-teaser"><img alt="FoundationGait: performance scales from 6M to 130M against the fixed GaitSSB baseline" src="data/projects/teasers/foundation-scaling.svg?v=4" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/foundation-scaling.svg?v=4" data-animated="data/projects/teasers/foundation-evidence.svg?v=13" tabindex="0" role="button" aria-label="Show additional foundation evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -379,7 +381,7 @@ a:hover{color:#f09228}
                 <div id="pub-gaitmax" class="pub-card" data-topic="computer-vision" data-year="2026" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2026-GaitMax.svg" width="100%" playsinline autoplay muted loop preload/>
+                            <div class="research-media focus-teaser"><img alt="GaitMax: one RGB input with aligned left and right body-part attention maps" src="data/projects/teasers/gaitmax-poses.svg?v=2" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/gaitmax-poses.svg?v=2" data-animated="data/projects/teasers/gaitmax-evidence.svg?v=11" tabindex="0" role="button" aria-label="Show additional gaitmax evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -405,7 +407,7 @@ a:hover{color:#f09228}
                 <div class="pub-card" data-topic="computer-vision" data-year="2025" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2025-BiggerGait.webp" width="100%" playsinline autoplay muted loop preload/>
+                            <div class="research-media focus-teaser"><img alt="BiggerGait: complementary LVM layers feed separate gait features and a combined decision" src="data/projects/teasers/bigger-layer-scan.svg?v=4" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/bigger-layer-scan.svg?v=4" data-animated="data/projects/teasers/biggergait-evidence.svg?v=13" tabindex="0" role="button" aria-label="Show additional biggergait evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -435,7 +437,7 @@ a:hover{color:#f09228}
                 <div class="pub-card" data-topic="computer-vision" data-year="2025" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <div class="sapiensid-crop"><img src="data/projects/2025-SapiensID.webp" alt="SapiensID lettering formed from a mosaic of human portraits"/></div>
+                            <div class="research-media focus-teaser"><img alt="SapiensID: fixed portrait, matching or different person, and corresponding part similarity" src="data/projects/teasers/sapiens-scales.svg?v=2" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/sapiens-scales.svg?v=2" data-animated="data/projects/teasers/sapiensid-evidence.svg?v=11" tabindex="0" role="button" aria-label="Show additional sapiensid evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -463,7 +465,7 @@ a:hover{color:#f09228}
                 <div class="pub-card featured-paper" data-topic="computer-vision" data-year="2024" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2024-BigGait.webp" width="100%" playsinline autoplay muted loop preload/>
+                            <div class="research-media focus-teaser"><img alt="BigGait: original walking sequence and four visual representations" src="data/projects/teasers/biggait-original-poster.webp?v=3" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/biggait-original-poster.webp?v=3" data-animated="data/projects/teasers/biggait-original-loop.webp?v=3" tabindex="0" role="button" aria-label="Show additional biggait evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -491,7 +493,7 @@ a:hover{color:#f09228}
                 <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/2023-GaitEditer.webp" alt="GaitEditer attribute editing overview" width="100%"/>
+                            <div class="research-media focus-teaser"><img alt="GaitEditer: thirteen clothing, appearance, and viewpoint edits with matched original silhouettes" src="data/projects/teasers/gaitediter-edit.svg?v=3" width="540" height="360" loading="lazy" decoding="async" data-still="data/projects/teasers/gaitediter-edit.svg?v=3" data-animated="data/projects/teasers/gaitediter-evidence.svg?v=12" tabindex="0" role="button" aria-label="Show additional gaitediter evidence" aria-pressed="false"/></div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -661,5 +663,6 @@ a:hover{color:#f09228}
     </div>
 </div>
 
+<script src="static/js/research-media.js?v=4" defer></script>
 </body>
 </html>

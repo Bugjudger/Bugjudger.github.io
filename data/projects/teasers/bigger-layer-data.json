@@ -1,0 +1,35 @@
+{
+  "layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "rank1_average": [
+    84.0,
+    85.8,
+    87.1,
+    87.5,
+    89.0,
+    89.5,
+    88.9,
+    89.3,
+    88.2,
+    87.3,
+    87.2,
+    80.9
+  ],
+  "model": "DINOv2-S",
+  "dataset": "CCPG",
+  "metric": "Mean Rank-1 across CL, UP, DN and BG",
+  "source": "BiggerGait Figure 3, AVG column; arXiv:2505.18132v3 page 5",
+  "source_url": "https://arxiv.org/pdf/2505.18132v3"
+}

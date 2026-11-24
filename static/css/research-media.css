@@ -1,0 +1,88 @@
+/* Native paper crops. Every panel preserves the source aspect ratio. */
+.research-media { display:flex; gap:6px; align-items:center; justify-content:center; overflow:hidden; width:100%; aspect-ratio:3 / 2; }
+.research-media .media-panel { display:flex; flex:1; flex-direction:column; min-width:0; min-height:0; align-items:center; justify-content:center; height:100%; gap:5px; }
+.research-media .media-panel span { flex:none; font:11px/1.15 'Lato',Arial,sans-serif; color:#555; text-align:center; }
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .col-l .research-media img,
+.research-media img { position:static; inset:auto; display:block; width:100%; height:100%; max-width:100%; min-height:0; object-fit:contain; object-position:center; }
+.research-media .media-panel img { flex:1; height:0; }
+.research-media.scene img { object-fit:cover !important; }
+.research-media.stack-scenes, .research-media.clue-scenes, .research-media.stack-panels { flex-direction:column; }
+.research-media.stack-scenes img { height:calc(50% - 3px) !important; object-fit:cover !important; }
+.research-media.clue-scenes img:first-child { height:24% !important; object-fit:cover !important; }
+.research-media.clue-scenes img:last-child { height:calc(76% - 6px) !important; object-fit:cover !important; }
+.research-media.stack-panels .media-panel { width:100%; height:calc(50% - 3px); flex:1; gap:2px; }
+/* Adapted from https://jonbarron.info/stylesheet.css (.paper, .paper-media,
+   .paper-info, and its 640px breakpoint). Keep our 210px / 3:2 artwork
+   instead of square assets. Media width + two 12px insets = 234px. */
+#main-pub-card-container .pub-card[data-topic="computer-vision"] {
+ padding-bottom:0;
+ margin-bottom:10px;
+}
+#main-pub-card-container .pub-card:is([data-topic="computer-vision"], [data-topic="experience"]) > .row {
+ display:grid;
+ grid-template-columns:234px minmax(0, 1fr);
+ align-items:center;
+}
+#main-pub-card-container .pub-card:is([data-topic="computer-vision"], [data-topic="experience"]) .col-l {
+ width:100%; max-width:none; min-width:0; align-self:center;
+ padding:12px;
+}
+#main-pub-card-container .pub-card:is([data-topic="computer-vision"], [data-topic="experience"]) .col-r {
+ width:100%; max-width:none; min-width:0;
+ padding:8px;
+}
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .col-l .research-media {
+ position:relative; inset:auto; width:100%; max-width:210px;
+ height:auto; aspect-ratio:3 / 2; margin:0 auto;
+}
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .title,
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .authors,
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .info {
+ margin-bottom:0;
+}
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .paper-desc { margin:14px 0 0; }
+@media(max-width:640px) {
+ #main-pub-card-container .pub-card:is([data-topic="computer-vision"], [data-topic="experience"]) > .row {
+  grid-template-columns:124px minmax(0, 1fr);
+ }
+ #main-pub-card-container .pub-card:is([data-topic="computer-vision"], [data-topic="experience"]) .col-l { padding:12px 8px 12px 12px; }
+ #main-pub-card-container .pub-card:is([data-topic="computer-vision"], [data-topic="experience"]) .col-r { padding:10px 12px 10px 6px; }
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .col-l .research-media { max-width:104px; }
+}
+
+/* Experience and Teaching share Research image width; logos keep their aspect ratio. */
+#main-pub-card-container .pub-card[data-topic="experience"] .col-l > img {
+ display:block; width:100%; max-width:210px; height:auto; object-fit:contain; margin:0 auto;
+}
+@media(max-width:640px) {
+ #main-pub-card-container .pub-card[data-topic="experience"] .col-l > img { max-width:104px; }
+}
+
+/* Fully composed 3:2 thumbnails; never stretch the source or its labels. */
+.research-media.focus-teaser {
+ gap:0;
+ box-sizing:border-box;
+ border:0;
+ border-radius:0;
+ background:#f4f4f4;
+}
+.research-media.focus-teaser picture { display:block; width:100%; height:100%; }
+#main-pub-card-container .pub-card[data-topic="computer-vision"] .col-l .research-media.focus-teaser img,
+.research-media.focus-teaser img { width:100%; height:100%; object-fit:contain; }
+
+/* Reading rhythm: larger research introduction, breathing room between papers. */
+#main-pub-container .research-intro {
+ font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); margin:10px 0 30px;
+}
+@media(min-width:641px) {
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] { margin-bottom:20px; }
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .col-l { padding-top:24px; padding-bottom:24px; }
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .col-r { padding-top:20px; padding-bottom:20px; }
+ #main-pub-card-container .pub-card[data-topic="computer-vision"],
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .title,
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .authors,
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .authors.authors-compact,
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .conference,
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .info,
+ #main-pub-card-container .pub-card[data-topic="computer-vision"] .paper-desc { font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+}

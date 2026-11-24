@@ -1,0 +1,83 @@
+{
+  "source": "GaitEditer v1 Figure 7, native PDF image indices verified by page positions",
+  "cases": [
+    {
+      "key": "outfit",
+      "original": 30,
+      "edited": 42,
+      "label": "+ Outfit"
+    },
+    {
+      "key": "skirt",
+      "original": 30,
+      "edited": 39,
+      "label": "+ Skirt"
+    },
+    {
+      "key": "hat",
+      "original": 30,
+      "edited": 33,
+      "label": "+ Hat"
+    },
+    {
+      "key": "view195",
+      "original": 30,
+      "edited": 60,
+      "label": "View 195°"
+    },
+    {
+      "key": "view270",
+      "original": 30,
+      "edited": 51,
+      "label": "View 270°"
+    },
+    {
+      "key": "size",
+      "original": 0,
+      "edited": 6,
+      "label": "+ Size"
+    },
+    {
+      "key": "hoodie",
+      "original": 0,
+      "edited": 12,
+      "label": "+ Hoodie"
+    },
+    {
+      "key": "hair",
+      "original": 0,
+      "edited": 9,
+      "label": "+ Hair"
+    },
+    {
+      "key": "jacket",
+      "original": 0,
+      "edited": 3,
+      "label": "+ Jacket"
+    },
+    {
+      "key": "female",
+      "original": 15,
+      "edited": 18,
+      "label": "Female"
+    },
+    {
+      "key": "younger",
+      "original": 15,
+      "edited": 21,
+      "label": "− Age"
+    },
+    {
+      "key": "older",
+      "original": 15,
+      "edited": 24,
+      "label": "+ Age"
+    },
+    {
+      "key": "pants",
+      "original": 15,
+      "edited": 27,
+      "label": "+ Pants"
+    }
+  ]
+}

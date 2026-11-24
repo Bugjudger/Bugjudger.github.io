@@ -1,0 +1,62 @@
+{
+  "duration_seconds": 2.6,
+  "markers": [
+    {
+      "color": "#f5c444",
+      "rgb": [
+        55.66,
+        47.99
+      ],
+      "observed_body": [
+        178.31,
+        36.15
+      ],
+      "canonical_body": [
+        207.99,
+        42.6
+      ],
+      "canonical_features": [
+        336.74,
+        43.8
+      ]
+    },
+    {
+      "color": "#3297d3",
+      "rgb": [
+        57.03,
+        114.83
+      ],
+      "observed_body": [
+        178.79,
+        101.77
+      ],
+      "canonical_body": [
+        189.95,
+        104.37
+      ],
+      "canonical_features": [
+        328.14,
+        101.06
+      ]
+    },
+    {
+      "color": "#c35ab5",
+      "rgb": [
+        48.76,
+        207.17
+      ],
+      "observed_body": [
+        181.21,
+        201.42
+      ],
+      "canonical_body": [
+        216.7,
+        207.07
+      ],
+      "canonical_features": [
+        330.83,
+        172.52
+      ]
+    }
+  ]
+}

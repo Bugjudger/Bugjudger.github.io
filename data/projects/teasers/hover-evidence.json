@@ -1,0 +1,108 @@
+[
+  {
+    "asset": "idworld-evidence.svg",
+    "source": "原论文 Figure 1：input_A、b_side/back_A、c_side/back_A。",
+    "extra_information": "保留单人、侧面和背面的原意。右侧两个人物同步缩小 10%；Pixel 与 Latent 的可见高度、宽度和中心对齐，切换时保持一致。",
+    "note": "像素图是显式生成的参考对比，并非 IDWorld 的中间输出。",
+    "starts_with_exact_static_image": "idworld-pixel-reference.svg",
+    "poster_hold_seconds": 0,
+    "duration_seconds": 0.6
+  },
+  {
+    "asset": "puppet-evidence.svg",
+    "source": "原论文 Figure 2：RGB 输入、恢复的人体与规范化特征。",
+    "extra_information": "RGB 原图 → 3D body → 对齐后的特征。恢复滑动点演示；头、躯干与脚的标记从 RGB 人物出发，经过身体变换落在对应特征上。",
+    "note": "静态与动画均为同一尺寸；两种 3D body 固定在同一展示框。滑动全程由 4.2 秒缩短至 2.6 秒。",
+    "starts_with_exact_static_image": "puppet-body-alignment.svg",
+    "poster_hold_seconds": 0,
+    "duration_seconds": 2.6
+  },
+  {
+    "asset": "videoresearcher-evidence.svg",
+    "source": "https://arxiv.org/html/2609.19664v1, Section 3.3 and Figure 3",
+    "extra_information": "Illustrates tool development: implement scene search, validate on video, retain an accepted tool for reuse. Toolbox +1 is a schematic accepted update, not a measured result.",
+    "duration_seconds": 4.8,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "videoresearcher-tools.svg"
+  },
+  {
+    "asset": "clue-evidence.svg",
+    "extra_information": "Adds six sampled clue frames and actual full-video incorrect vs clue-only correct predictions.",
+    "source": "https://arxiv.org/html/2608.25356v1, Figure 1",
+    "states": 7,
+    "transition_seconds": 0.45,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "clue-distillation.svg"
+  },
+  {
+    "asset": "foundation-evidence.svg",
+    "source": "FoundationGait paper Figure 3 (page 6), Gait3D, pretrained on WebGait-2M",
+    "extra_information": "Complete GaitSSB baseline stays visible. FoundationGait draws from 6M to 130M immediately on hover and holds its final curve. Logarithmic parameter axis, measured Figure 3 checkpoints; connecting lines are visual guides.",
+    "duration_seconds": 1.2,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "foundation-scaling.svg",
+    "parameters_millions": [
+      6,
+      10,
+      30,
+      130
+    ],
+    "FoundationGait": [
+      32.5,
+      38.1,
+      41.1,
+      48.0
+    ],
+    "GaitSSB": [
+      27.4,
+      33.2,
+      34.1,
+      34.6
+    ]
+  },
+  {
+    "asset": "gaitmax-evidence.svg",
+    "source": "GaitMax Figure 3, native RGB input and six learned part-attention outputs extracted from the official paper",
+    "extra_information": "The same input stays fixed while the two matching attention views cycle through legs, feet, and arms. These are actual part-query responses on one frame, not fabricated temporal trajectories. Native body scale and position remain identical.",
+    "duration_seconds": 2.5,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "gaitmax-poses.svg",
+    "native_source_resolution": [
+      32,
+      64
+    ]
+  },
+  {
+    "asset": "biggergait-evidence.svg",
+    "source": "BiggerGait Figures 1(c), 2 and Section 3.5; native input and layer planes extracted from Figure 1",
+    "extra_information": "Schematic representative layers feed separate gait representations, then contribute to a combined decision. Uses original paper RGB input and layer motifs. Colored strips are conceptual layer contributions, not measured feature maps or a claimed learned fusion module. Section 3.5 ensembles layer-wise distances by averaging. Starts at the static diagram, immediately traces contributions, holds the combined result.",
+    "duration_seconds": 1.1,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "bigger-layer-scan.svg"
+  },
+  {
+    "asset": "sapiensid-evidence.svg",
+    "source": "SapiensID Figure 7, upper-right and lower-right pairs; original raster panels from page 8",
+    "extra_information": "Fixed portrait reference. The candidate and its corresponding part-similarity map switch together between the same person in a different pose/scale and a different person. Original similarities and imagery are preserved; tiny numeric annotations are hidden for thumbnail legibility. This is actual paper evidence, not generated heatmaps.",
+    "duration_seconds": 2.4,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "sapiens-scales.svg"
+  },
+  {
+    "asset": "biggait-original-loop.webp",
+    "source": "Original data/projects/2024-BigGait.webp, concluding walking sequence",
+    "extra_information": "RGB and all-purpose, silhouette, parsing, and skeleton representations from the original animation. Reflowed to 3:2 without stretching.",
+    "duration_seconds": 0.76,
+    "starts_with_exact_static_image": "biggait-original-poster.webp",
+    "poster_hold_seconds": 0
+  },
+  {
+    "asset": "gaitediter-evidence.svg",
+    "source": "GaitEditer v1 Figure 7; PDF image placements verified against labels",
+    "extra_information": "Thirteen real edits: skirt, hat/jacket/pants outfit, hat, 60-to-195 and 60-to-270 degree views, size, hoodie, hair, jacket, female, younger, older, and pants. The left original changes only when the source subject changes; every before/after pair uses native 44x64 geometry. No exaggerated or fabricated shapes.",
+    "duration_seconds": 9.36,
+    "poster_hold_seconds": 0,
+    "starts_with_exact_static_image": "gaitediter-edit.svg",
+    "cases": "gaitediter-edit-cases.json"
+  }
+]

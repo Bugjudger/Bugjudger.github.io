@@ -1,0 +1,15 @@
+[
+  {
+    "asset": "recurrent-shell-game.gif",
+    "before_seconds": 5.46,
+    "after_seconds": 4.28,
+    "change": "Frame delays only; all image data unchanged"
+  },
+  {
+    "asset": "instanthdr-bear-loop.gif",
+    "before_seconds": 6.41,
+    "after_seconds": 4.8,
+    "change": "Rebuilt from original supplementary MP4 at 240x160, 10fps, 128-color palette, 0.75x duration; poster extracted from first GIF frame",
+    "bytes": 728533
+  }
+]

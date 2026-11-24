@@ -1,0 +1,59 @@
+{
+  "source": "data/projects/2024-BigGait.webp",
+  "source_frames": [
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178
+  ],
+  "crop_boxes": [
+    [
+      28,
+      100,
+      130,
+      303
+    ],
+    [
+      277,
+      100,
+      379,
+      303
+    ],
+    [
+      529,
+      90,
+      631,
+      294
+    ],
+    [
+      681,
+      88,
+      783,
+      292
+    ],
+    [
+      834,
+      86,
+      938,
+      294
+    ]
+  ],
+  "duration_ms": 40,
+  "display": "RGB input and four original representations; original pixels reflowed into 3:2",
+  "bytes": 163516
+}

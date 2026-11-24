@@ -79,37 +79,36 @@ body { font-family:'Lato',Helvetica,Arial,sans-serif; color:#000; -webkit-font-s
 /* Keep the original photo proportions within the circular avatar. */
 #main-content-container .col-avatar .avatar { object-fit:cover; object-position:center; }
 
-/* Typography copied from Jon Barron's homepage: 14px Lato, 32px name,
-   22px regular section headings, bold titles, upright authors, italic venues.
-   Existing columns, widths, image dimensions, and section order are unchanged. */
-body { font-size:14px; line-height:normal; }
+/* One body size across contact links, bio, papers, experience, teaching,
+   projects and dates. News uses the same body size, with gray dates. */
+:root { --homepage-body-size:17px; --homepage-body-leading:1.3; }
+body { font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
 #main-info-container .col-name .name { font-size:32px; font-weight:400; font-family:'Lato',Helvetica,Arial,sans-serif; }
-#main-info-container .col-name .email { font-size:14px; }
-#main-bio-container, .research-intro { font-size:14px; line-height:normal; }
-#main-news-container .subtitle, #main-pub-container .subtitle { font-size:22px; font-weight:400; line-height:normal; }
-#main-pub-card-container .pub-card { font-size:14px; line-height:normal; }
-#main-pub-card-container .pub-card .title { font-size:14px; font-weight:700; line-height:normal; }
+#main-info-container .col-name .email { font-size:var(--homepage-body-size); }
+#main-bio-container, .research-intro { font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+#main-news-container .subtitle, #main-pub-container .subtitle { font-size:22px; font-weight:400; line-height:var(--homepage-body-leading); }
+#main-pub-card-container .pub-card { font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+#main-pub-card-container .pub-card .title { font-size:var(--homepage-body-size); font-weight:700; line-height:var(--homepage-body-leading); }
 #main-pub-card-container .pub-card .authors,
-#main-pub-card-container .pub-card .authors.authors-compact { font-size:14px; font-style:normal; font-weight:400; line-height:normal; color:#000; }
+#main-pub-card-container .pub-card .authors.authors-compact { font-size:var(--homepage-body-size); font-style:normal; font-weight:400; line-height:var(--homepage-body-leading); color:#000; }
 #main-pub-card-container .pub-card .authors a,
 #main-pub-card-container .pub-card .authors u { white-space:nowrap; }
 #main-pub-card-container .pub-card .authors u { font-weight:700; }
-#main-pub-card-container .pub-card .conference { font-size:14px; font-weight:400; font-style:normal; }
+#main-pub-card-container .pub-card .conference { font-size:var(--homepage-body-size); font-weight:400; font-style:normal; }
 #main-pub-card-container .pub-card .conference em { font-style:italic; }
 #main-pub-card-container .pub-card .conference .award,
 #main-pub-card-container .pub-card .conference .award-highlight { font-style:normal; font-weight:700; }
-.award { color:#d40000; }
-.award-highlight, #main-news-container .news-award.award-highlight { color:#c64848; }
-#main-pub-card-container .pub-card .info { font-size:14px; line-height:normal; }
-#main-pub-card-container .pub-card .paper-desc { margin:14px 0 0; font-size:14px; line-height:normal; color:#000; }
-#footer, #footer .copyright { font-size:13px; }
+.award, .award-highlight, #main-news-container .news-award { color:#d40000; }
+#main-pub-card-container .pub-card .info { font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+#main-pub-card-container .pub-card .paper-desc { margin:14px 0 0; font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); color:#000; }
+#footer, #footer .copyright { font-size:var(--homepage-body-size); }
 @media(max-width:640px) { #main-info-container .col-name .name { font-size:28px; } }
 
 /* Align images and text consistently across Research, Experience, Teaching and Projects. */
 @media(min-width:640px) {
  #main-pub-card-container .pub-card > .row { flex-wrap:nowrap; align-items:center; }
- #main-pub-card-container .pub-card .col-l { flex:0 0 30%; max-width:30%; padding-right:24px; }
- #main-pub-card-container .pub-card .col-r { flex:0 0 70%; max-width:70%; padding-right:12px; }
+ #main-pub-card-container .pub-card .col-l { flex:0 0 27%; max-width:27%; padding-right:24px; }
+ #main-pub-card-container .pub-card .col-r { flex:0 0 73%; max-width:73%; padding-right:12px; }
 }
 #main-pub-card-container .pub-card .paper-desc { margin-top:6px; }
 
@@ -117,8 +116,8 @@ body { font-size:14px; line-height:normal; }
 .contact-links { margin-top:4px; }
 .research-highlight-key { background-color:#ffffd0; }
 
-/* Give diagrams more room and match both column width and adjacent text height.
-   Fill intentionally allows unequal scaling while keeping the entire figure. */
+/* Preserve the approved page and column widths. Research media has its own
+   aspect-preserving rules in research-media.css. */
 @media (min-width:768px) {
  #main-content { width:90%; min-width:0; max-width:1040px; }
 }
@@ -127,40 +126,24 @@ body { font-size:14px; line-height:normal; }
   align-self:stretch;
   position:relative;
  }
- #main-pub-card-container .pub-card[data-topic="computer-vision"] .col-l img {
-  position:absolute;
-  inset:10px auto 0 0;
-  display:block;
-  width:calc(100% - 24px);
-  height:calc(100% - 10px);
-  object-fit:fill;
-  object-position:center;
- }
 }
 
-/* Show only the original SapiensID mosaic (left 906 of 1333 pixels).
-   Keep the source asset intact and omit the right-hand example panels. */
-#main-pub-card-container .pub-card .sapiensid-crop {
- position:relative;
- width:100%;
- aspect-ratio:906 / 300;
- overflow:hidden;
-}
-#main-pub-card-container .pub-card .col-l .sapiensid-crop img {
- position:absolute;
- inset:0 auto 0 0;
- display:block;
- width:147.130243%;
- max-width:none;
- height:100%;
- object-fit:fill;
-}
-@media (min-width:640px) {
- #main-pub-card-container .pub-card .sapiensid-crop {
-  position:absolute;
-  inset:10px 24px 0 0;
-  width:auto;
-  height:calc(100% - 10px);
-  aspect-ratio:auto;
- }
-}
+/* Match the Research introduction; keep News compact. */
+#main-bio-container { font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+
+/* Links and metadata follow the surrounding text rather than separate sizes. */
+#main-info-container .contact-links a,
+#main-pub-card-container .pub-card a,
+#main-pub-card-container .pub-card .pub-card-body { font-size:inherit; }
+#main-news-container { font-size:var(--homepage-body-size); }
+#main-news-container li, #main-news-container .news-thanks { font-size:var(--homepage-body-size); }
+#main-news-container time { color:#555; }
+#main-news-container .subtitle, #main-pub-container .subtitle { font-size:22px; }
+#main-pub-container .subtitle-aux, #main-pub-container .subtitle-aux .note { font-size:var(--homepage-body-size); }
+
+#main-news-container time { flex-basis:82px; }
+
+/* Compact News rhythm, at the shared body size. */
+#main-news-container li, #main-news-container .news-thanks { line-height:1.2; }
+
+#main-news-container .news-role { color:#555; font-size:inherit; font-weight:400; white-space:nowrap; }
