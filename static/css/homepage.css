@@ -147,3 +147,19 @@ body { font-size:var(--homepage-body-size); line-height:var(--homepage-body-lead
 #main-news-container li, #main-news-container .news-thanks { line-height:1.2; }
 
 #main-news-container .news-role { color:#555; font-size:inherit; font-weight:400; white-space:nowrap; }
+
+
+/* Compact academic service and teaching, without decorative logos. */
+.text-service-section { margin-bottom:26px; }
+.text-service-list { margin:10px 0 0; padding-left:22px; }
+.text-service-list li { margin:4px 0; font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+.text-service-section .service-date { color:#555; }
+/* School, role, and courses form three clear levels beneath Teaching. */
+.teaching-group { margin:14px 0 18px 16px; }
+.teaching-group:last-child { margin-bottom:0; }
+.teaching-group-header { display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 12px; }
+.text-service-section .teaching-institution { margin:0; font-size:var(--homepage-body-size); font-weight:700; line-height:var(--homepage-body-leading); }
+.teaching-role { color:#666; font-size:var(--homepage-body-size); line-height:var(--homepage-body-leading); }
+.teaching-group .text-service-list { margin-top:6px; }
+
+@media(max-width:640px) { .teaching-group-header { flex-direction:column; align-items:flex-start; } }
